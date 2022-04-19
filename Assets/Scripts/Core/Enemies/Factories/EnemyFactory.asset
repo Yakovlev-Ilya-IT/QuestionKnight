@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c546699a5f0d0e348ab803ee1930ac04, type: 3}
+  m_Name: EnemyFactory
+  m_EditorClassIdentifier: 
+  _lightBandit:
+    _enemyPrefab: {fileID: 4429911922049342333, guid: c07590fc5c582cd4596da806ce885b36, type: 3}
+    Health: 100
+    Damage: 7
+  _heavyBandit:
+    _enemyPrefab: {fileID: 3071381180866684212, guid: 31e40bc3064142c438b4969a29a8974e, type: 3}
+    Health: 150
+    Damage: 4
