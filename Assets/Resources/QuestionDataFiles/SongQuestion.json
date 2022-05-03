@@ -1,0 +1,189 @@
+[
+  {
+    "QuestionText": "Шальная императрица",
+    "Answers": [
+      {
+        "AnswerText": "Ирина Аллегрова",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Лариса Долина",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Алла Пугачёва",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Где написана группа крови у Виктора Цоя?",
+    "Answers": [
+      {
+        "AnswerText": "На рукаве",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "В медицинской карте",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "На плече",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Вместе с кем T-fest исполняет трек Ламбада?",
+    "Answers": [
+      {
+        "AnswerText": "Скриптонит",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Баста",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Тимати",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Что советует группа Каста, если вокруг шум?",
+    "Answers": [
+      {
+        "AnswerText": "Не кипишуй",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Не переживай",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Успокойся",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Татуировки на плечах у Сергея Лазарева",
+    "Answers": [
+      {
+        "AnswerText": "Крылья",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Бабочки",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Музыкальные ноты",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Где нужно искать Тимати?",
+    "Answers": [
+      {
+        "AnswerText": "В клубе",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "У бара",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Дома",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Лейбл, основанный Тимати",
+    "Answers": [
+      {
+        "AnswerText": "Black Star",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Gazgolder",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Record",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Лейбл, основанный Бастой",
+    "Answers": [
+      {
+        "AnswerText": "Gazgolder",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Black Star",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Скриптонит",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Настоящее имя Скриптонита",
+    "Answers": [
+      {
+        "AnswerText": "Адиль",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Мигель",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Кирилл",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Настоящее имя Басты",
+    "Answers": [
+      {
+        "AnswerText": "Василий Вакуленко",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Кирилл Бледный",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Максим Матвеев",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Какие явления в доме Скриптонита?",
+    "Answers": [
+      {
+        "AnswerText": "Паранормальные",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Нормальные",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Погодные",
+        "IsCorrect": false
+      }
+    ]
+  }
+]

@@ -3,11 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
-public abstract class EnemyView : MonoBehaviour
+
+public class PlayerView : MonoBehaviour
 {
     protected Animator _animator;
-    protected Enemy _enemy;
+    protected Player _enemy;
 
     protected const string HURT_KEY = "HURT";
     protected const string DIED_KEY = "DIED";
@@ -16,7 +16,7 @@ public abstract class EnemyView : MonoBehaviour
     public event Action DeathAnimationFinished;
     public event Action AttackAnimationFinished;
 
-    public virtual void Initialize(Enemy enemy)
+    public virtual void Initialize(Player enemy)
     {
         _animator = GetComponent<Animator>();
         _enemy = enemy;

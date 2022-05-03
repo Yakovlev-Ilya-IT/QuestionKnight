@@ -10,7 +10,9 @@ public class QuizCore : MonoBehaviour
     private readonly List<string> _categoriesFileName = new List<string>()
     {
         "DotaQuestions",
-        "SimpleQuestions"
+        "SimpleQuestions",
+        "SongQuestion",
+        "MedicineQuestions"
     };
 
     public void Init()

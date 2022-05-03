@@ -1,0 +1,257 @@
+[
+  {
+    "QuestionText": "Зачем мозгу извилины?",
+    "Answers": [
+      {
+        "AnswerText": "Для увеличения поверхности",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Для красоты",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Так лучше кровоснабжение",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Из каких частей состоит кровь?",
+    "Answers": [
+      {
+        "AnswerText": "Плазма и форменные элементы",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Лейкоциты, эритроциты",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Белки, жиры, углеводы",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Детский врач это...",
+    "Answers": [
+      {
+        "AnswerText": "Педиатр",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Офтальмолог",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Проктолог",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Что приносит кровь к сердцу?",
+    "Answers": [
+      {
+        "AnswerText": "Вены",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Артерии",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Клапаны",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Кому врачи дают клятву?",
+    "Answers": [
+      {
+        "AnswerText": "Гиппократу",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Аристотелю",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Ньютону",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Заболевание, возникшее по вине врача",
+    "Answers": [
+      {
+        "AnswerText": "Ятрогенное",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Внутрибольничное",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Контагиозное",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Абсцесс это...",
+    "Answers": [
+      {
+        "AnswerText": "Очаговое гнойное воспаление",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Осложнение онкологии",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Вирус",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "С онкологией может появиться...",
+    "Answers": [
+      {
+        "AnswerText": "Паранеоплатический синдром",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Тремор",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Ненависть к людям",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Кахексия это...",
+    "Answers": [
+      {
+        "AnswerText": "Истощение",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Вид перелома",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Признак старости",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Протеинурия это...",
+    "Answers": [
+      {
+        "AnswerText": "Белок в моче",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Белок в крови",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Отсутствие белка в организме",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Паллиативное лечение это...",
+    "Answers": [
+      {
+        "AnswerText": "Симптоматическое при невозможности излечения",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Патогенетическое",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Медикаментозное",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Консервативное лечение это...",
+    "Answers": [
+      {
+        "AnswerText": "Медикаментозное",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Оперативное",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Реанимационное",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Сколько стадий рака?",
+    "Answers": [
+      {
+        "AnswerText": "Четыре",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Две",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Семь",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Рак какого органа наиболее распространён у мужчин?",
+    "Answers": [
+      {
+        "AnswerText": "Лёгкое",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Желудок",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Прямая кишка",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Рак какого органа наиболее распространён у женщин?",
+    "Answers": [
+      {
+        "AnswerText": "Молочная железа",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Шейка матки",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Лёгкое",
+        "IsCorrect": false
+      }
+    ]
+  }
+]

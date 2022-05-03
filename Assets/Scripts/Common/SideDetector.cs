@@ -1,20 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public static class SideDetector 
 {
+    private const float tanPiDividedSix = 0.00913877f;
+
     public static AnswerLocationSide GetLocation(Vector3 point)
     {
-        if (point.x > point.y && point.x > -point.y)
+        if (point.y > -point.x * tanPiDividedSix && point.x > 0)
             return AnswerLocationSide.right;
-        if (-point.x > point.y && -point.x > -point.y)
+        if (point.y > point.x * tanPiDividedSix && point.x < 0)
             return AnswerLocationSide.left;
-        if (-point.y > -point.x && -point.y > point.x)
+        if (point.y < point.x * tanPiDividedSix && point.y < -point.x * tanPiDividedSix)
             return AnswerLocationSide.bottom;
-        else
-            return AnswerLocationSide.top;
 
-
+        Debug.LogError($"Error point is {point}");
+        return AnswerLocationSide.left;
     }
 }

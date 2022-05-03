@@ -1,1 +1,1 @@
-﻿public enum AnswerLocationSide { right, left, bottom, top};
+﻿public enum AnswerLocationSide { right, left, bottom};

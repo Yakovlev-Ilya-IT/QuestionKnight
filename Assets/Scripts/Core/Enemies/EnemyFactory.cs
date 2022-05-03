@@ -14,11 +14,11 @@ public class EnemyFactory : ScriptableObject
 
     [SerializeField] EnemyConfig _lightBandit, _heavyBandit;
 
-    public Enemy Get(EnemyType type, Player player)
+    public Enemy Get(EnemyType type, Player player, GameScenario sccenario)
     {
         EnemyConfig config = GetConfig(type);
         Enemy instance = Instantiate(config._enemyPrefab);
-        instance.Initialize(config.Health, config.Damage, player);
+        instance.Initialize(config.Health, config.Damage, player, sccenario);
         return instance;
     }
 

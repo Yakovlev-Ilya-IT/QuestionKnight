@@ -20,11 +20,8 @@ public class Cristall : MonoBehaviour
 
     private void OnSwipeEnded(Vector3 direction)
     {
-        if (direction.y < Mathf.Abs(direction.x))//подумать над вынесением проверки в метод
-        {
-            _cristallRotator.SetRotationDirection(direction);
-            _cristallRotator.AccelerateRotation();
-        }
+        _cristallRotator.SetRotationDirection(direction);
+        _cristallRotator.AccelerateRotation();
     }
 
     private void OnDisable()

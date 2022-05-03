@@ -18,7 +18,7 @@ public class AnswerHandler
     {
         AnswerLocationSide answerLocation = SideDetector.GetLocation(direction);
 
-        if (answerLocation != AnswerLocationSide.top)//сделать проверку на налл текущего ответа (его может и не быть)
+        if (_currentQusetion != null)//сделать проверку на налл текущего ответа (его может и не быть)
         {
             Answer answer = _currentQusetion.GetAnswer(answerLocation);
 
@@ -29,5 +29,14 @@ public class AnswerHandler
 
             QuizEventHandler.CristallSwipeEnded -= ApplyAnswerDirection;
         }
+        else
+        {
+            Debug.LogError("Ответы закончились");
+        }
+    }
+
+    ~AnswerHandler()
+    {
+        QuizEventHandler.CristallSwipeEnded -= ApplyAnswerDirection;
     }
 }
