@@ -53,13 +53,11 @@ public class GameStationBehaviour : MonoBehaviour, IStationStateSwitcher
 
     private void OnGaveCorrectAnswer()
     {
-        Debug.Log("Вы ответили правильно");
         _currentState.PlayerAttack();
     }
 
     private void OnGaveIncorrectAnswer()
     {
-        Debug.Log("Вы ответили неправильно");
         _currentState.EnemyAttack();
     }
 
