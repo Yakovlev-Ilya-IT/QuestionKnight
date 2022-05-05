@@ -11,24 +11,25 @@ public class EnemyAttackState : BaseGameState
 
     public override void Launch()
     {
-        _player.ApplyDamageFinished += OnApplyDamageFinished;
+        _player.ProtectionStageIsOver += OnProtectionStageIsOver;
+        _player.Died += OnDied;
         _scenario.CurrentEnemy.DealDamage();
     }
 
-    private void OnApplyDamageFinished()
+    private void OnProtectionStageIsOver()
     {
-        if(_player.CurrentHealth <= 0)
-        {
-            Debug.Log("LOOSE");
-        }
-        else
-        {
-            _stateSwitcher.SwitchState<WaitingForAnswerState>();
-        }
+        _stateSwitcher.SwitchState<WaitingForAnswerState>();
     }
+
+    private void OnDied()
+    {
+        Debug.Log("LOOSE");
+    }
+
     public override void Stop()
     {
-        _player.ApplyDamageFinished -= OnApplyDamageFinished;
+        _player.ProtectionStageIsOver -= OnProtectionStageIsOver;
+        _player.Died -= OnDied;
     }
 
     public override void EnemyAttack() {}

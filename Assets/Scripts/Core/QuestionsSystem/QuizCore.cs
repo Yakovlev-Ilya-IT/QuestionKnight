@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class QuizCore : MonoBehaviour
 {   
-    [SerializeField] private QuestionGenerator _questionGenerator;
+    private QuestionGenerator _questionGenerator;
+    private AnswerHandler _answerHandler;
     [SerializeField] private Question _question;
     [SerializeField] private List<Answer> _answers;
 
@@ -15,15 +16,15 @@ public class QuizCore : MonoBehaviour
         "MedicineQuestions"
     };
 
-    public void Init()
+    public void Init(AnswerHandler answerHandler)
     {
         _questionGenerator = new QuestionGenerator(_categoriesFileName[Random.Range(0, _categoriesFileName.Count)]);
+        _answerHandler = answerHandler;
     }
 
-    public QuestionItem SetNextQuestion()
+    public void SetNextQuestion()
     {
         QuestionItem questionItem = _questionGenerator.Generate(_question, _answers);
-
-        return questionItem;
+        _answerHandler.SetCurrentQuestion(questionItem);
     }
 }

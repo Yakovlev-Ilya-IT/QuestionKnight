@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu (fileName = "GameScenario", menuName = "Game/Scenario")]
@@ -11,6 +8,7 @@ public class GameScenario : ScriptableObject
     private Transform _spawnPoint;
 
     private Player _player;
+    private IDamageable _playerTarget;
 
     private int _index;
 
@@ -20,6 +18,7 @@ public class GameScenario : ScriptableObject
     {
         _spawnPoint = spawnPoint;
         _player = player;
+        _playerTarget = _player.GetComponent<IDamageable>();
         _index = 0;
     }
 
@@ -32,8 +31,11 @@ public class GameScenario : ScriptableObject
                 return false;
             }
 
-            CurrentEnemy = _spawnItems[_index].Factory.Get(_spawnItems[_index].Type, _player, this);
+            CurrentEnemy = _spawnItems[_index].Factory.Get(_spawnItems[_index].Type, _playerTarget, this);
             CurrentEnemy.SpawnTo(_spawnPoint.position);
+
+            _player.SetNewTarget(CurrentEnemy.GetComponent<IDamageable>());
+
             _index++;
             return true;
         }
@@ -43,6 +45,6 @@ public class GameScenario : ScriptableObject
 
     public void Recycle()
     {
-        CurrentEnemy = null;
+        CurrentEnemy = null; 
     }
 }

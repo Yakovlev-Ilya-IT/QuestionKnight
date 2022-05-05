@@ -9,25 +9,23 @@ public class PlayerAttackState : BaseGameState
     }
     public override void Launch()
     {
-        _scenario.CurrentEnemy.ApplyDamageFinished += OnApplyDamageFinished;
+        _scenario.CurrentEnemy.ProtectionStageIsOver += ProtectionStageIsOver;
+        _scenario.CurrentEnemy.Died += ProtectionStageIsOver;
         _player.DealDamage();
     }
 
-    private void OnApplyDamageFinished()
+    private void ProtectionStageIsOver()
     {
-        if (_scenario.Progress())
-        {
-            _stateSwitcher.SwitchState<WaitingForAnswerState>();
-        }
-        else
-        {
-            Debug.Log("WIN");
-        }
+        _stateSwitcher.SwitchState<WaitingForAnswerState>();
     }
 
     public override void Stop()
     {
-        _scenario.CurrentEnemy.ApplyDamageFinished -= OnApplyDamageFinished;
+        if (_scenario.CurrentEnemy != null)
+        {
+            _scenario.CurrentEnemy.ProtectionStageIsOver -= ProtectionStageIsOver;
+            _scenario.CurrentEnemy.Died -= ProtectionStageIsOver;
+        }
     }
     public override void EnemyAttack() { }
 

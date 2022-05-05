@@ -15,8 +15,10 @@ MonoBehaviour:
   _lightBandit:
     _enemyPrefab: {fileID: 4429911922049342333, guid: c07590fc5c582cd4596da806ce885b36, type: 3}
     Health: 10
-    Damage: 10
+    Damage: 5
+    TimeToAnswer: 5
   _heavyBandit:
     _enemyPrefab: {fileID: 3071381180866684212, guid: 31e40bc3064142c438b4969a29a8974e, type: 3}
     Health: 20
     Damage: 5
+    TimeToAnswer: 10

@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Enemy Factory", menuName = "Factories/Enemy")]
+[CreateAssetMenu(fileName = "EnemyFactory", menuName = "Factories/Enemy")]
 public class EnemyFactory : ScriptableObject
 {
     [Serializable]
@@ -10,15 +10,16 @@ public class EnemyFactory : ScriptableObject
         public Enemy _enemyPrefab;
         [Range(0, 200)] public int Health = 100;
         [Range(0, 15)] public int Damage = 5;
+        [Range(1, 50)] public float TimeToAnswer;
     }
 
     [SerializeField] EnemyConfig _lightBandit, _heavyBandit;
 
-    public Enemy Get(EnemyType type, Player player, GameScenario sccenario)
+    public Enemy Get(EnemyType type, IDamageable target, GameScenario sccenario)
     {
         EnemyConfig config = GetConfig(type);
         Enemy instance = Instantiate(config._enemyPrefab);
-        instance.Initialize(config.Health, config.Damage, player, sccenario);
+        instance.Initialize(config.Health, config.Damage, config.TimeToAnswer, target, sccenario);
         return instance;
     }
 
