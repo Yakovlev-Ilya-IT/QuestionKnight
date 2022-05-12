@@ -6,11 +6,14 @@ public class StatusBar : MonoBehaviour
 {
     [SerializeField] private Image _fill;
     [SerializeField] private float _updateSpeed;
+    [SerializeField] private Gradient _gradient;
+
     private const int FullFilling = 1;
 
     public void Init()
     {
         _fill.fillAmount = FullFilling;
+        _fill.color = _gradient.Evaluate(FullFilling);
     }
 
     public void SetFilling(float valueAsPercantage)
@@ -27,6 +30,7 @@ public class StatusBar : MonoBehaviour
         {
             elapsed += Time.deltaTime;
             _fill.fillAmount = Mathf.Lerp(previousValue, valueAsPercantage, elapsed/ _updateSpeed);
+            _fill.color = _gradient.Evaluate(Mathf.Lerp(previousValue, valueAsPercantage, elapsed / _updateSpeed));
             yield return null;
         }
 

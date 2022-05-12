@@ -540,7 +540,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5091f9bde04f5fc4eb513e60fb948b05, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4e67a5df0278e174290ba51df6fe8769, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -649,9 +649,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 391106494}
-  - component: {fileID: 391106493}
-  - component: {fileID: 391106496}
   - component: {fileID: 391106495}
+  - component: {fileID: 391106493}
   m_Layer: 0
   m_Name: CORE
   m_TagString: Untagged
@@ -668,13 +667,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 391106492}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13280e41d3fb0ba4185835d8eb9b286c, type: 3}
+  m_Script: {fileID: 11500000, guid: 18a18541a399ec54886aa5f6e37c1e22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cristall: {fileID: 1829119721}
+  _scenario: {fileID: 11400000, guid: 39edd22b31d99834597b0349f7ab3a42, type: 2}
+  _timeToAnswerHandler: {fileID: 391106495}
+  _enemySpawnPoint: {fileID: 1853176201}
+  _playerPrefab: {fileID: 2750015691896732365, guid: b52b8058068e652409b456408e8e57c7, type: 3}
+  _playerStatsConfig: {fileID: 11400000, guid: d797656965256fc4aa3cb5741d19fde5, type: 2}
+  _playerSpawnPoint: {fileID: 686347744}
   _question: {fileID: 1594453574}
   _answers:
-  - {fileID: 1756640191}
   - {fileID: 460477718}
+  - {fileID: 1756640191}
   - {fileID: 1023870301}
 --- !u!4 &391106494
 Transform:
@@ -703,26 +709,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timeBar: {fileID: 2031419418}
---- !u!114 &391106496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 391106492}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ed66b3b76d38ef4fb29d6b3364e9683, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _quizCore: {fileID: 391106493}
-  _cristall: {fileID: 1829119721}
-  _scenario: {fileID: 11400000, guid: 39edd22b31d99834597b0349f7ab3a42, type: 2}
-  _timeToAnswerHandler: {fileID: 391106495}
-  _enemySpawnPoint: {fileID: 1853176201}
-  _playerPrefab: {fileID: 2750015691896732365, guid: b52b8058068e652409b456408e8e57c7, type: 3}
-  _playerStatsConfig: {fileID: 11400000, guid: d797656965256fc4aa3cb5741d19fde5, type: 2}
-  _playerSpawnPoint: {fileID: 686347744}
 --- !u!1 &460477714
 GameObject:
   m_ObjectHideFlags: 0
@@ -8533,6 +8519,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fill: {fileID: 320820967}
   _updateSpeed: 0.1
+  _gradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 0.44879463, b: 0, a: 1}
+    key1: {r: 1, g: 0.97351444, b: 0, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
 --- !u!114 &2031419419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8553,7 +8568,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5091f9bde04f5fc4eb513e60fb948b05, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b26260dff36431f4a82d0aa41ecf512e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -1,0 +1,428 @@
+[
+  {
+    "QuestionText": "Самый популярный канал на YouTube?",
+    "Answers": [
+      {
+        "AnswerText": "T-Series",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "А4",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "PewDiePie",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Название канала разработчика игры?",
+    "Answers": [
+      {
+        "AnswerText": "Илья Яковлев - IT и игры",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Alex_Gamer[YT]",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "TrueAndFalse",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Как по английски морожоное?",
+    "Answers": [
+      {
+        "AnswerText": "Morozhonoe",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Moroshka",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Ice Cream",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionText": "?",
+    "Answers": [
+      {
+        "AnswerText": "Да",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Нет",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Почему?",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Шарп это?",
+    "Answers": [
+      {
+        "AnswerText": "Акула",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Шар",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Язык программирования",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionText": "Самое популярное видео - песня на ютубе это?",
+    "Answers": [
+      {
+        "AnswerText": "GANGNAM STYLE",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Gangnam style",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Despacito",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionText": "У разработчика есть дискорд сервер?",
+    "Answers": [
+      {
+        "AnswerText": "Да!",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "что это?",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "нет",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionText": "GG это?",
+    "Answers": [
+      {
+        "AnswerText": "это GG",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "это хороший чел",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "это хорошая игра",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionText": "LOL это?",
+    "Answers": [
+      {
+        "AnswerText": "это лол",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "это лайко",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "это смешно",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionText": "Круглые персонажи в",
+    "Answers": [
+      {
+        "AnswerText": "Рик и Морти",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Леди баг и Супер кот",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "смешарики",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionText": "Чикибамбони это",
+    "Answers": [
+      {
+        "AnswerText": "овца",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Кафе",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Ловушка Джокера",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionText": "Чикимабмони находится в",
+    "Answers": [
+      {
+        "AnswerText": "OverWatch",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Among Us",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "MineCtaft",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionText": "Компот это",
+    "Answers": [
+      {
+        "AnswerText": "Это герой из мультика",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "это ютубер",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "это напиток",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionText": "Любимое время года разработчика",
+    "Answers": [
+      {
+        "AnswerText": "Весна",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Зима",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Лето",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionText": "Снасти это ",
+    "Answers": [
+      {
+        "AnswerText": "Конфеты",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Имя",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "рыболовные преднадлежности",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionText": "Разработчику нравится шаурма?",
+    "Answers": [
+      {
+        "AnswerText": "да",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "нет",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Возможно частично",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Ананас это?",
+    "Answers": [
+      {
+        "AnswerText": "ёлка",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "ягода",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "фрукт",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionText": "Ты лучший?",
+    "Answers": [
+      {
+        "AnswerText": "нет",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "нет",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "да",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionText": "Ты это?",
+    "Answers": [
+      {
+        "AnswerText": "никто",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Я ЛУЧШИЙ НА ПЛАНЕТЕ!",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "я крутой человек!",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionText": "Голубь это",
+    "Answers": [
+      {
+        "AnswerText": "крылья",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "блюдо",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "птица",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionText": "Водить за нос это?",
+    "Answers": [
+      {
+        "AnswerText": "Следить",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "водить за тобой",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "обманывать",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionText": "Зарубить на носу это?",
+    "Answers": [
+      {
+        "AnswerText": "Зарубить на носу топором",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Зарубить на кончике",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Запомнить",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionText": "Бить баклуши это?",
+    "Answers": [
+      {
+        "AnswerText": "Бить грушу",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Бить ботинки",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Бездельничать",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionText": "Я делаю",
+    "Answers": [
+      {
+        "AnswerText": "игру",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "колу",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "вдох",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionText": "апчхи",
+    "Answers": [
+      {
+        "AnswerText": "Будь апчихухуа",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "ЗАКРЫВАЙ РООООТ!",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Будь Здоров",
+        "IsCorrect": true
+      }
+    ]
+  }
+]
+    

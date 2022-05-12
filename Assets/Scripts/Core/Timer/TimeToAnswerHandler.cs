@@ -45,6 +45,5 @@ public class TimeToAnswerHandler : MonoBehaviour
         }
 
         TimeToAnswerIsOver?.Invoke();
-        Debug.Log("Время кончилось");
     }
 }

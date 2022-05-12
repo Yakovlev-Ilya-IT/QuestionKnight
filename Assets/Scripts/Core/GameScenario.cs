@@ -8,7 +8,6 @@ public class GameScenario : ScriptableObject
     private Transform _spawnPoint;
 
     private Player _player;
-    private IDamageable _playerTarget;
 
     private int _index;
 
@@ -18,7 +17,6 @@ public class GameScenario : ScriptableObject
     {
         _spawnPoint = spawnPoint;
         _player = player;
-        _playerTarget = _player.GetComponent<IDamageable>();
         _index = 0;
     }
 
@@ -31,10 +29,10 @@ public class GameScenario : ScriptableObject
                 return false;
             }
 
-            CurrentEnemy = _spawnItems[_index].Factory.Get(_spawnItems[_index].Type, _playerTarget, this);
+            CurrentEnemy = _spawnItems[_index].Factory.Get(_spawnItems[_index].Type, _player, this);
             CurrentEnemy.SpawnTo(_spawnPoint.position);
 
-            _player.SetNewTarget(CurrentEnemy.GetComponent<IDamageable>());
+            _player.SetNewTarget(CurrentEnemy);
 
             _index++;
             return true;

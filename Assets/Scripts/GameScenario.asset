@@ -18,6 +18,8 @@ MonoBehaviour:
   - _factory: {fileID: 11400000, guid: bc1eca63791499d469b486aefe8d0dbd, type: 2}
     _type: 0
   - _factory: {fileID: 11400000, guid: bc1eca63791499d469b486aefe8d0dbd, type: 2}
+    _type: 0
+  - _factory: {fileID: 11400000, guid: bc1eca63791499d469b486aefe8d0dbd, type: 2}
     _type: 1
   - _factory: {fileID: 11400000, guid: bc1eca63791499d469b486aefe8d0dbd, type: 2}
     _type: 1

@@ -1,46 +1,24 @@
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
 
-public class GameStationBehaviour : MonoBehaviour, IStationStateSwitcher
+public class GameStationBehaviour : IStationStateSwitcher
 {
-    [SerializeField] private QuizCore _quizCore;
-    [SerializeField] private Cristall _cristall;
-    [SerializeField] private GameScenario _scenario;
-    [SerializeField] private TimeToAnswerHandler _timeToAnswerHandler;
-
-    [SerializeField] private Transform _enemySpawnPoint;
-
-    [SerializeField] private Player _playerPrefab;
-    [SerializeField] private PlayerStatsConfig _playerStatsConfig;
-    [SerializeField] private Transform _playerSpawnPoint;
-
-    private AnswerHandler _answerHandler;
+    private QuizCore _quizCore;
+    private GameScenario _scenario;
+    private TimeToAnswerHandler _timeToAnswerHandler;
 
     private List<BaseGameState> _states;
     private BaseGameState _currentState;
 
-    private void Awake()
+    public GameStationBehaviour(QuizCore quizCore, GameScenario scenario, TimeToAnswerHandler timeToAnswerHandler, Player player)
     {
-        _answerHandler = new AnswerHandler();
-    }
+        _quizCore = quizCore;
+        _scenario = scenario;
+        _timeToAnswerHandler = timeToAnswerHandler;
 
-    private void OnEnable()
-    {
-        _answerHandler.GaveCorrectAnswer += OnGaveCorrectAnswer;
-        _answerHandler.GaveIncorrectAnswer += OnGaveIncorrectAnswer;
+        _quizCore.AnswerHandler.GaveCorrectAnswer += OnGaveCorrectAnswer;
+        _quizCore.AnswerHandler.GaveIncorrectAnswer += OnGaveIncorrectAnswer;
         _timeToAnswerHandler.TimeToAnswerIsOver += OnGaveIncorrectAnswer;
-    }
-
-    private void Start()
-    {
-        _cristall.Init();
-        _quizCore.Init(_answerHandler);
-
-        Player player = Instantiate(_playerPrefab, _playerSpawnPoint);
-        player.Initialize(_playerStatsConfig.MaxHealth, _playerStatsConfig.AttackDamage);
-
-        _scenario.Init(_enemySpawnPoint, player);
 
         _states = new List<BaseGameState>()
         {
@@ -63,10 +41,10 @@ public class GameStationBehaviour : MonoBehaviour, IStationStateSwitcher
         _currentState.EnemyAttack();
     }
 
-    private void OnDisable()
+    ~GameStationBehaviour()
     {
-        _answerHandler.GaveCorrectAnswer -= OnGaveCorrectAnswer;
-        _answerHandler.GaveIncorrectAnswer -= OnGaveIncorrectAnswer;
+        _quizCore.AnswerHandler.GaveCorrectAnswer -= OnGaveCorrectAnswer;
+        _quizCore.AnswerHandler.GaveIncorrectAnswer -= OnGaveIncorrectAnswer;
         _timeToAnswerHandler.TimeToAnswerIsOver -= OnGaveIncorrectAnswer;
     }
 

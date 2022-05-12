@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Health))]
-public abstract class Character : MonoBehaviour
+public abstract class Character : MonoBehaviour, IDamageable
 {
     protected Health _health;
     [SerializeField] private StatusBar _healthBar;
@@ -48,6 +48,11 @@ public abstract class Character : MonoBehaviour
     public void DealDamage()
     {
         _view.Attack();
+    }
+
+    public void TakeDamage(int damage)
+    {
+        _health.TakeDamage(damage);
     }
 
     private void OnGotDamage(float currentHealth)
