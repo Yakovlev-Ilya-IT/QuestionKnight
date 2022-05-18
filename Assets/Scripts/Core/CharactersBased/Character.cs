@@ -83,7 +83,7 @@ public abstract class Character : MonoBehaviour, IDamageable
             Debug.LogError("Target is not set");
     }
 
-    private void OnDisable()
+    protected void OnDisable()
     {
         _view.DeathAnimationFinished -= OnDeathAnimationFinished;
         _view.AttackAnimationFinished -= OnAttackAnimationFinished;

@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IStationStateSwitcher
 {
-    void SwitchState<T>() where T : BaseGameState;
+    void SwitchState<T>() where T : BaseLevelCycleState;
 }

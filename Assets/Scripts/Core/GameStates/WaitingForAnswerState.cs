@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WaitingForAnswerState : BaseGameState
+public class WaitingForAnswerState : BaseLevelCycleState
 {
     private QuizCore _quizCore;
     private TimeToAnswerHandler _timeToAnswerHandler;
@@ -16,10 +16,10 @@ public class WaitingForAnswerState : BaseGameState
 
     public override void Launch()
     {
-        if (_scenario.Progress())
+        if (_scenario.TryIncreaseProgress())
         {
             _quizCore.SetNextQuestion();
-            _timeToAnswerHandler.Init(_scenario.CurrentEnemy.TimeToAnswer);
+            _timeToAnswerHandler.Set(_scenario.CurrentEnemy.TimeToAnswer);
             _timeToAnswerHandler.StartCountingAnswerTime();
         }
         else

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAttackState : BaseGameState
+public class EnemyAttackState : BaseLevelCycleState
 {
     public EnemyAttackState(Player player, GameScenario scenario, IStationStateSwitcher stateSwitcher) : base(player, scenario, stateSwitcher)
     {

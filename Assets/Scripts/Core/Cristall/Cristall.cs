@@ -1,18 +1,17 @@
 using UnityEngine;
+using Zenject;
 
-[RequireComponent(typeof(CristallRotator), typeof(CristallSwipeHandler))]
 public class Cristall : MonoBehaviour
 {
-    private CristallRotator _cristallRotator;
-    private CristallSwipeHandler _cristallSwipeHandler;
+    [SerializeField] private CristallRotator _cristallRotator;
+    [SerializeField] private CristallSwipeHandler _cristallSwipeHandler;
 
-    private void Awake()
+    private void OnEnable()
     {
-        _cristallRotator = GetComponent<CristallRotator>();
-        _cristallSwipeHandler = GetComponent<CristallSwipeHandler>();
         QuizEventHandler.CristallSwipeEnded += OnSwipeEnded;
     }
 
+    [Inject]
     public void Init()
     {
         _cristallRotator.Init(new Vector3(Random.value, Random.value, Random.value));

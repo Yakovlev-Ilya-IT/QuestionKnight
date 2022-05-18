@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class AnswerHandler
+public class AnswerHandler: IAnswerHandler
 {
     private QuestionItem _currentQusetion;
 

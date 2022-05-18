@@ -40,6 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3438400514460532303}
+  - component: {fileID: 7875563812852077458}
   m_Layer: 0
   m_Name: CristallEgg
   m_TagString: Untagged
@@ -62,6 +63,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7875563812852077458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3584518724848882851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f17c9d6c927c1274bb8001e0476b1459, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cristallRotator: {fileID: 3482901605704632443}
+  _cristallSwipeHandler: {fileID: 5254424668808849296}
 --- !u!1001 &6189046003933306810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -160,18 +175,6 @@ MonoBehaviour:
   _startRotateSpeed: 100
   _returnRotateSpeed: 400
   _rotateAccelerationMultiplier: 15
---- !u!114 &3866713851431808860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6422838256474514155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f17c9d6c927c1274bb8001e0476b1459, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5254424668808849296
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -3,12 +3,11 @@ using System.Collections.Generic;
 public class QuizCore
 {   
     private QuestionGenerator _questionGenerator;
-    private AnswerHandler _answerHandler;
+    private IAnswerHandler _answerHandler;
 
-    private Question _question;
-    private List<Answer> _answers;
+    private QuizItemHolder _quizItemHolder;
 
-    public AnswerHandler AnswerHandler => _answerHandler;
+    public IAnswerHandler AnswerHandler => _answerHandler;
 
     private readonly List<string> _categoriesFileName = new List<string>()
     {
@@ -19,11 +18,10 @@ public class QuizCore
         "MedicineQuestions"
     };
 
-    public QuizCore(AnswerHandler answerHandler, Question question, List<Answer> answers)
+    public QuizCore(IAnswerHandler answerHandler, QuizItemHolder quizItemHolder)
     {
         //_questionGenerator = new QuestionGenerator(_categoriesFileName[Random.Range(0, _categoriesFileName.Count)]);
-        _question = question;
-        _answers = answers;
+        _quizItemHolder = quizItemHolder;
 
         _questionGenerator = new QuestionGenerator(_categoriesFileName[0]);
 
@@ -32,7 +30,7 @@ public class QuizCore
 
     public void SetNextQuestion()
     {
-        QuestionItem questionItem = _questionGenerator.Generate(_question, _answers);
+        QuestionItem questionItem = _questionGenerator.Generate(_quizItemHolder);
         _answerHandler.SetCurrentQuestion(questionItem);
     }
 }

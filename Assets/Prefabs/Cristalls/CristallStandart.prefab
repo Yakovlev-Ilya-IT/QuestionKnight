@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2237695845557045914}
+  - component: {fileID: 8983910589916799575}
   m_Layer: 0
   m_Name: CristallStandart
   m_TagString: Untagged
@@ -24,13 +25,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73332207378342006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.6580001, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4595581613603777306}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8983910589916799575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73332207378342006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f17c9d6c927c1274bb8001e0476b1459, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cristallRotator: {fileID: 1535334154033170478}
+  _cristallSwipeHandler: {fileID: 3069766508487299677}
 --- !u!1 &2059821769704531211
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,17 +198,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4676573fda19e444aaa4ce2c87c1a2ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &4392859833826715059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8420102770469213953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f17c9d6c927c1274bb8001e0476b1459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

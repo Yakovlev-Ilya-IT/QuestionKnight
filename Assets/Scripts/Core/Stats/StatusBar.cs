@@ -10,7 +10,7 @@ public class StatusBar : MonoBehaviour
 
     private const int FullFilling = 1;
 
-    public void Init()
+    public void SetFullFilling()
     {
         _fill.fillAmount = FullFilling;
         _fill.color = _gradient.Evaluate(FullFilling);

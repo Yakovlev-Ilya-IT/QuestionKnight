@@ -23,7 +23,7 @@ public class Health : MonoBehaviour
         _currentHealth = _maxHealth;
 
         _healthBar = healthBar;
-        _healthBar.Init();
+        _healthBar.SetFullFilling();
     }
 
     public void TakeDamage(int damage)

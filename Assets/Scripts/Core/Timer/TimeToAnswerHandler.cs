@@ -14,11 +14,11 @@ public class TimeToAnswerHandler : MonoBehaviour
 
     public event Action TimeToAnswerIsOver;
 
-    public void Init(float timeToAnswer)
+    public void Set(float timeToAnswer)
     {
         _timeToAnswer = timeToAnswer;
         _remainigTimeToAnswer = _timeToAnswer;
-        _timeBar.Init();
+        _timeBar.SetFullFilling();
     }
 
     public void StartCountingAnswerTime()

@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using Zenject;
 
 [CreateAssetMenu(fileName = "EnemyFactory", menuName = "Factories/Enemy")]
 public class EnemyFactory : ScriptableObject
@@ -13,13 +14,13 @@ public class EnemyFactory : ScriptableObject
         [Range(1, 50)] public float TimeToAnswer;
     }
 
-    [SerializeField] EnemyConfig _lightBandit, _heavyBandit;
+    [SerializeField] private EnemyConfig _lightBandit, _heavyBandit;
 
-    public Enemy Get(EnemyType type, IDamageable target, GameScenario sccenario)
+    public Enemy Get(EnemyType type, DiContainer diContainer)
     {
         EnemyConfig config = GetConfig(type);
-        Enemy instance = Instantiate(config._enemyPrefab);
-        instance.Initialize(config.Health, config.Damage, config.TimeToAnswer, target, sccenario);
+        Enemy instance = diContainer.InstantiatePrefabForComponent<Enemy>(config._enemyPrefab);
+        instance.Initialize(config.Health, config.Damage, config.TimeToAnswer, diContainer.Resolve<Player>(), diContainer.Resolve<GameScenario>());
         return instance;
     }
 

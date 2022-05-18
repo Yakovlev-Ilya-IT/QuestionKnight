@@ -6,7 +6,6 @@ public class QuestionItem
     [SerializeField] private Question _question;
     private Dictionary<AnswerLocationSide, Answer> _locationSideToAnswer;
 
-
     public QuestionItem(Question question, Dictionary<AnswerLocationSide, Answer> locationSideToAnswer)
     {
         _question = question;

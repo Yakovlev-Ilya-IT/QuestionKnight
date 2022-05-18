@@ -1,7 +1,7 @@
 public class PlayerView : CharacterView
 {
-    public void Initialize(Player enemy)
+    public void Initialize(Player player)
     {
-        Initialize(enemy);
+        base.Initialize(player);
     }
 }
