@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EnemyAttackState : BaseLevelCycleState
 {
-    public EnemyAttackState(Player player, GameScenario scenario, IStationStateSwitcher stateSwitcher) : base(player, scenario, stateSwitcher)
+    public EnemyAttackState(Player player, LevelScenario scenario, IStationStateSwitcher stateSwitcher) : base(player, scenario, stateSwitcher)
     {
     }
 

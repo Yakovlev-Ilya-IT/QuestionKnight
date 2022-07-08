@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerAttackState : BaseLevelCycleState
 {
-    public PlayerAttackState(Player player, GameScenario scenario, IStationStateSwitcher stateSwitcher) : base(player, scenario, stateSwitcher)
+    public PlayerAttackState(Player player, LevelScenario scenario, IStationStateSwitcher stateSwitcher) : base(player, scenario, stateSwitcher)
     {
     }
     public override void Launch()

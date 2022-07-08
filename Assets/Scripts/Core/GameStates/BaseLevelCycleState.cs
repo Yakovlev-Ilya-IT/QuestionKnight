@@ -6,10 +6,10 @@ public abstract class BaseLevelCycleState
 {
     protected readonly Player _player;
     protected readonly IStationStateSwitcher _stateSwitcher;
-    protected readonly GameScenario _scenario;
+    protected readonly LevelScenario _scenario;
 
 
-    protected BaseLevelCycleState (Player player, GameScenario scenario, IStationStateSwitcher stateSwitcher)
+    protected BaseLevelCycleState (Player player, LevelScenario scenario, IStationStateSwitcher stateSwitcher)
     {
         _player = player;
         _stateSwitcher = stateSwitcher;

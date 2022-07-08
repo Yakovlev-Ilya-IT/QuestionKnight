@@ -20,7 +20,7 @@ public class EnemyFactory : ScriptableObject
     {
         EnemyConfig config = GetConfig(type);
         Enemy instance = diContainer.InstantiatePrefabForComponent<Enemy>(config._enemyPrefab);
-        instance.Initialize(config.Health, config.Damage, config.TimeToAnswer, diContainer.Resolve<Player>(), diContainer.Resolve<GameScenario>());
+        instance.Initialize(config.Health, config.Damage, config.TimeToAnswer, diContainer.Resolve<Player>(), diContainer.Resolve<LevelScenario>());
         return instance;
     }
 

@@ -9,7 +9,6 @@ public class CristallSwipeHandler : MonoBehaviour
     private void OnMouseDown()
     {
         _startTapPosition = Input.mousePosition;
-        QuizEventHandler.SendCristallSwipeBegun();
     }
 
     private void OnMouseDrag()

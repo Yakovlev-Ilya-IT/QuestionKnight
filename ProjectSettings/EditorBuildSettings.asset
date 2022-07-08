@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/LevelSelect.unity
+    guid: 79592f6f7a0cec8408a61aa9f016a6d3
+  - enabled: 1
+    path: Assets/Scenes/StandartLevel.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/MedicineLevel.unity
+    guid: 831d8a6d27a841643b17a381d877c332
+  - enabled: 1
+    path: Assets/Scenes/SongLevel.unity
+    guid: 148cd483c56a8de46a7214df06c7564a
   m_configObjects: {}

@@ -9,7 +9,7 @@ public class LevelCycleBehaviour : IStationStateSwitcher
     private List<BaseLevelCycleState> _states;
     private BaseLevelCycleState _currentState;
 
-    public LevelCycleBehaviour(QuizCore quizCore, GameScenario scenario, TimeToAnswerHandler timeToAnswerHandler, Player player)
+    public LevelCycleBehaviour(QuizCore quizCore, LevelScenario scenario, TimeToAnswerHandler timeToAnswerHandler, Player player)
     {
         _quizCore = quizCore;
         _timeToAnswerHandler = timeToAnswerHandler;

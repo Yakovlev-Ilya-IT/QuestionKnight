@@ -8,7 +8,7 @@ public class WaitingForAnswerState : BaseLevelCycleState
     private QuizCore _quizCore;
     private TimeToAnswerHandler _timeToAnswerHandler;
 
-    public WaitingForAnswerState(Player player, GameScenario scenario, IStationStateSwitcher stateSwitcher, QuizCore quizCore, TimeToAnswerHandler timeToAnswerHandler) : base(player, scenario, stateSwitcher)
+    public WaitingForAnswerState(Player player, LevelScenario scenario, IStationStateSwitcher stateSwitcher, QuizCore quizCore, TimeToAnswerHandler timeToAnswerHandler) : base(player, scenario, stateSwitcher)
     {
         _quizCore = quizCore;
         _timeToAnswerHandler = timeToAnswerHandler;

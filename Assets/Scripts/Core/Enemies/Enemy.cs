@@ -2,11 +2,11 @@ public class Enemy : Character
 {
     private float _timeToAnswer;
 
-    private GameScenario _scenario;
+    private LevelScenario _scenario;
 
     public float TimeToAnswer => _timeToAnswer;
 
-    public void Initialize(int maxHealth, int attackDamage, float timeToAnswer, IDamageable target, GameScenario scenario)
+    public void Initialize(int maxHealth, int attackDamage, float timeToAnswer, IDamageable target, LevelScenario scenario)
     {
         Initialize(maxHealth, attackDamage, target);
 
