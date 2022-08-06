@@ -6,7 +6,6 @@ public class ServiceInstaller : MonoInstaller
 {
     [SerializeField] private GameplayMediator _gameplaMediator;
     [SerializeField] private SceneLoadMediator _sceneLoadMediator;
-    private LevelsDataProvider _levelsDataProvider;
 
     public override void InstallBindings()
     {

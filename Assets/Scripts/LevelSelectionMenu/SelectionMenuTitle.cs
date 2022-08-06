@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using Zenject;
 
 [RequireComponent(typeof(TypeWriter))]
 public class SelectionMenuTitle : MonoBehaviour
@@ -8,30 +9,26 @@ public class SelectionMenuTitle : MonoBehaviour
     [SerializeField] string _adventureSelectionText;
     private TypeWriter _typeWriter;
 
+    private ILevelSelectionMediator _mediator;
+
+    [Inject]
+    public void Construct(ILevelSelectionMediator mediator)
+    {
+        _mediator = mediator;
+    }
+
     private void Awake()
     {
         _typeWriter = GetComponent<TypeWriter>();
     }
 
-    private void OnEnable()
-    {
-        LevelSelectionEventsHolder.AdventureSelected += OnAdventureSelected;
-        LevelSelectionEventsHolder.BackToAdventuresButtonPressed += OnBackToAdventuresButtonPressed;
-    }
-
-    private void OnAdventureSelected(AdventureConfig config)
+    public void SetLevelSelectionText()
     {
         _typeWriter.Write(_levelSelectionText);
     }
 
-    public void OnBackToAdventuresButtonPressed()
+    public void SetAdventureSelectionText()
     {
         _typeWriter.Write(_adventureSelectionText);
-    }
-
-    private void OnDisable()
-    {
-        LevelSelectionEventsHolder.AdventureSelected -= OnAdventureSelected;
-        LevelSelectionEventsHolder.BackToAdventuresButtonPressed -= OnBackToAdventuresButtonPressed;
     }
 }

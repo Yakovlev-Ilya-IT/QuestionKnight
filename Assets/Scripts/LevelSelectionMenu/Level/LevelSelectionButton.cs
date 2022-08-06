@@ -6,10 +6,13 @@ public class LevelSelectionButton : SelectionButton
     [SerializeField] private LevelSelectionButtonView _view;
 
     private LevelConfig LevelConfig => _levelConfig;
+    
+    private ILevelSelectionMediator _mediator;
 
-    public void Initialize(LevelConfig levelConfig, string levelNumber)
+    public void Initialize(LevelConfig levelConfig, string levelNumber, ILevelSelectionMediator mediator)
     {
         _levelConfig = levelConfig;
+        _mediator = mediator;
         _view.Initialize(levelNumber);
     }
 
@@ -17,7 +20,7 @@ public class LevelSelectionButton : SelectionButton
     {
         base.Click();
 
-        LevelSelectionEventsHolder.SendLevelSelected(_levelConfig);
+        _mediator.SendLevelConfig(_levelConfig);
     }
 
     public override void Lock()

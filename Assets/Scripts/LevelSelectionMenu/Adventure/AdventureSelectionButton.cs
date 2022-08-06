@@ -1,9 +1,18 @@
-using UnityEngine; 
+using UnityEngine;
+using Zenject;
 
 public class AdventureSelectionButton : SimpleButton
 {
     private AdventureConfig _config;
     [SerializeField] private AdventureSelectionButtonView _view;
+
+    private ILevelSelectionMediator _mediator;
+
+    [Inject]
+    private void Construct(ILevelSelectionMediator mediator)
+    {
+        _mediator = mediator;
+    }
 
     public void Initialize(AdventureConfig config)
     {
@@ -14,6 +23,10 @@ public class AdventureSelectionButton : SimpleButton
 
     protected override void Click()
     {
-        LevelSelectionEventsHolder.SendAdventureSelected(_config);
+        _mediator.SendAdventureConfig(_config);
+        _mediator.SetLevelSelectionTitleText();
+        _mediator.FillLevelsGrid(_config);
+        _mediator.FillQuestionsCategoriesGrid(_config.QuestionsCategories);
+        _mediator.OpenLevelSelectionMenu();
     }
 }

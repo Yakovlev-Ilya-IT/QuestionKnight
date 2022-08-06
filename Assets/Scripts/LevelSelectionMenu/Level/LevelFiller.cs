@@ -13,21 +13,17 @@ public class LevelFiller : MonoBehaviour
     private List<LevelSelectionButton> _levelSelectionButtons;
     private LevelsDataProvider _levelsDataProvider;
     private ISaver _saver;
+    private ILevelSelectionMediator _mediator;
 
     [Inject]
-    private void Initialize(LevelsDataProvider levelsDataProvider, ISaver saver)
+    private void Initialize(LevelsDataProvider levelsDataProvider, ISaver saver, ILevelSelectionMediator mediator)
     {
         _levelsDataProvider = levelsDataProvider;
         _saver = saver;
+        _mediator = mediator;
     }
 
-    private void OnEnable()
-    {
-        LevelSelectionEventsHolder.AdventureSelected += OnAdventureSelected;
-        LevelSelectionEventsHolder.BackToAdventuresButtonPressed += OnBackToAdventuresButtonPressed;
-    }
-
-    private void OnAdventureSelected(AdventureConfig adventureConfig)
+    public void Fill(AdventureConfig adventureConfig)
     {
         LevelConfig[] levels = _levelsDataProvider.LoadAll(adventureConfig.AdventureNumber);
 
@@ -37,9 +33,14 @@ public class LevelFiller : MonoBehaviour
         FillLevelsGrid(levels, adventureConfig.CompleteLevels);
     }
 
-    private void OnBackToAdventuresButtonPressed()
+    public void Clear()
     {
-        Clear();
+        foreach (var button in _levelSelectionButtons)
+        {
+            Destroy(button.gameObject);
+        }
+
+        _levelSelectionButtons.Clear();
     }
 
     private void FillLevelsGrid(LevelConfig[] levels, int completeLevels)
@@ -61,7 +62,7 @@ public class LevelFiller : MonoBehaviour
 
     private LevelSelectionButton InitializeButton(LevelSelectionButton levelButton, LevelConfig levelConfig, int levelNumber, int completeLevels)
     {
-        levelButton.Initialize(levelConfig, (levelNumber).ToString());
+        levelButton.Initialize(levelConfig, (levelNumber).ToString(), _mediator);
 
         if (levelNumber > completeLevels + 1)
         {
@@ -72,27 +73,11 @@ public class LevelFiller : MonoBehaviour
             levelButton.Unlock();
             if(levelNumber - 1 == FirstButtonLevelIndex)
             {
-                LevelSelectionEventsHolder.SendLevelSelected(levelConfig);
+                _mediator.SendLevelConfig(levelConfig);
                 levelButton.Select();
             }
         }
 
         return levelButton;
-    }
-
-    private void Clear()
-    {
-        foreach (var button in _levelSelectionButtons)
-        {
-            Destroy(button.gameObject);
-        }
-
-        _levelSelectionButtons.Clear();
-    }
-
-    private void OnDisable()
-    {
-        LevelSelectionEventsHolder.AdventureSelected -= OnAdventureSelected;
-        LevelSelectionEventsHolder.BackToAdventuresButtonPressed -= OnBackToAdventuresButtonPressed;
     }
 }

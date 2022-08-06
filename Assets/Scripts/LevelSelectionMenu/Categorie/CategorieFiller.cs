@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 public class CategorieFiller : MonoBehaviour
 {
@@ -20,23 +21,15 @@ public class CategorieFiller : MonoBehaviour
         {QuestionsCategorie.Medicine, "Медицина"}
     };
 
-    private void OnEnable()
+    private ILevelSelectionMediator _mediator;
+
+    [Inject]
+    public void Construct(ILevelSelectionMediator mediator)
     {
-        LevelSelectionEventsHolder.AdventureSelected += OnAdventureSelected;
-        LevelSelectionEventsHolder.BackToAdventuresButtonPressed += OnBackToAdventuresButtonPressed;
+        _mediator = mediator;
     }
 
-    private void OnAdventureSelected(AdventureConfig adventureConfig)
-    {
-        FillCategoriesGrid(adventureConfig.QuestionsCategories);
-    }
-
-    private void OnBackToAdventuresButtonPressed()
-    {
-        Clear();
-    }
-
-    private void FillCategoriesGrid(QuestionsCategorie[] questionCategories)
+    public void Fill(QuestionsCategorie[] questionCategories)
     {
         _categorieSelectionButtons = new List<CategorieSelectionButton>();
         List<ISelectable> selectables = new List<ISelectable>();
@@ -44,11 +37,11 @@ public class CategorieFiller : MonoBehaviour
         for (int i = 0; i < questionCategories.Length; i++)
         {
             CategorieSelectionButton categorieSelectionButton = Instantiate(_categorieButtonPrefab, _grid.transform);
-            categorieSelectionButton.Initialize(questionCategories[i], _questionCategorieToCategorieName[questionCategories[i]]);
+            categorieSelectionButton.Initialize(questionCategories[i], _questionCategorieToCategorieName[questionCategories[i]], _mediator);
 
             if (i == DefaultCategorieButtonIndex)
             {
-                LevelSelectionEventsHolder.SendQuestionsCategorieSelected(questionCategories[i]);
+                _mediator.SendQuestionsCategory(questionCategories[i]);
                 categorieSelectionButton.Select();
             }
 
@@ -67,11 +60,5 @@ public class CategorieFiller : MonoBehaviour
         }
 
         _categorieSelectionButtons.Clear();
-    }
-
-    private void OnDisable()
-    {
-        LevelSelectionEventsHolder.AdventureSelected -= OnAdventureSelected;
-        LevelSelectionEventsHolder.BackToAdventuresButtonPressed -= OnBackToAdventuresButtonPressed;
     }
 }

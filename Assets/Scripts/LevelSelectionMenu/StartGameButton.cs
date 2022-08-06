@@ -16,24 +16,17 @@ public class StartGameButton : MonoBehaviour, IPointerClickHandler
         _sceneLoadMediator = sceneLoadMediator;
     }
 
-    private void OnEnable()
-    {
-        LevelSelectionEventsHolder.AdventureSelected += OnAdventureSelected;
-        LevelSelectionEventsHolder.LevelSelected += OnLevelSelected;
-        LevelSelectionEventsHolder.QuestionsCategorieSelected += OnQuestionsCategorieSelected;
-    }
-
-    private void OnAdventureSelected(AdventureConfig adventureConfig)
+    public void AdventureSelect(AdventureConfig adventureConfig)
     {
         _adventureConfig = adventureConfig;
     }
 
-    public void OnLevelSelected(LevelConfig levelConfig)
+    public void LevelSelect(LevelConfig levelConfig)
     {
         _levelConfig = levelConfig;
     }
 
-    public void OnQuestionsCategorieSelected(QuestionsCategorie questionsCategorie)
+    public void QuestionsCategorieSelect(QuestionsCategorie questionsCategorie)
     {
         _questionsCategorie = questionsCategorie;
     }
@@ -44,12 +37,5 @@ public class StartGameButton : MonoBehaviour, IPointerClickHandler
             _sceneLoadMediator.GoToLevel(_adventureConfig, _levelConfig, _questionsCategorie);  
         else
             Debug.LogError("Some of config not selected");
-    }
-
-    private void OnDisable()
-    {
-        LevelSelectionEventsHolder.AdventureSelected -= OnAdventureSelected;
-        LevelSelectionEventsHolder.LevelSelected -= OnLevelSelected;
-        LevelSelectionEventsHolder.QuestionsCategorieSelected -= OnQuestionsCategorieSelected;
     }
 }
