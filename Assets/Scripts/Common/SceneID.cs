@@ -1,7 +1,7 @@
 public enum SceneID
 {
-    Select = 0,
-    Standart,
-    Medicine,
-    Song
+    MainMenu = 0,
+    LevelSelectionMenu = 1,
+    StandartLevel = 2,
+    DemoLevel = 3
 }

@@ -4,7 +4,6 @@ using Zenject;
 public class EnemySpawnSystemInstaller : MonoInstaller
 {
     [SerializeField] private EnemySpawner _enemySpawner;
-    [SerializeField, InjectOptional] private EnemyWave _enemyWave;
 
     public override void InstallBindings()
     {
@@ -20,6 +19,5 @@ public class EnemySpawnSystemInstaller : MonoInstaller
     private void BindSpawnSystem()
     {
         Container.Bind<EnemySpawner>().FromInstance(_enemySpawner).AsSingle();
-        Container.Bind<EnemyWave>().FromInstance(_enemyWave);
     }
 }

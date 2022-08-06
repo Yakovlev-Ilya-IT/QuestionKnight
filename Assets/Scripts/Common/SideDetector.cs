@@ -7,13 +7,13 @@ public static class SideDetector
     public static AnswerLocationSide GetLocation(Vector3 point)
     {
         if (point.y > -point.x * tanPiDividedSix && point.x > 0)
-            return AnswerLocationSide.right;
+            return AnswerLocationSide.Right;
         if (point.y > point.x * tanPiDividedSix && point.x < 0)
-            return AnswerLocationSide.left;
+            return AnswerLocationSide.Left;
         if (point.y < point.x * tanPiDividedSix && point.y < -point.x * tanPiDividedSix)
-            return AnswerLocationSide.bottom;
+            return AnswerLocationSide.Bottom;
 
         Debug.LogError($"Error point is {point}");
-        return AnswerLocationSide.left;
+        return AnswerLocationSide.Left;
     }
 }

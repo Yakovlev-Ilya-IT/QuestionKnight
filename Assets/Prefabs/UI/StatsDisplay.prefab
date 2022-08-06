@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 375054154964048968}
   - component: {fileID: 8350854579054120225}
   - component: {fileID: 1570582947417412339}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: StatsDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &1570582947417412339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 426844984331772576}
   - component: {fileID: 8679304023451509759}
   - component: {fileID: 6472261060789533468}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: HealthBarFilling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,7 +187,7 @@ GameObject:
   - component: {fileID: 210418135821383630}
   - component: {fileID: 8875764746081963970}
   - component: {fileID: 8562085651689419874}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
