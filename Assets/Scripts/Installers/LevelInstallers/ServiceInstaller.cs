@@ -1,6 +1,5 @@
 using Zenject;
 using UnityEngine;
-using System;
 
 public class ServiceInstaller : MonoInstaller
 {
@@ -9,10 +8,9 @@ public class ServiceInstaller : MonoInstaller
 
     public override void InstallBindings()
     {
+        BindDataProviders();
         BindMediator();
         BindSaver();
-        BindLoader();
-        BindLevelsDataProvider();
     }
 
     private void BindMediator()
@@ -23,18 +21,12 @@ public class ServiceInstaller : MonoInstaller
 
     private void BindSaver()
     {
-        Container.Bind<ISaver>().To<JsonSaver>().FromNew().AsSingle();
         Container.Bind<LevelSaver>().FromNew().AsSingle();
     }
 
-    private void BindLoader()
-    {
-        Container.Bind<ZenjectSceneLoaderWrapper>().AsSingle();
-        Container.BindInterfacesAndSelfTo<SceneLoader>().FromNew().AsSingle();
-    }
-
-    private void BindLevelsDataProvider()
+    private void BindDataProviders()
     {
         Container.Bind<LevelsDataProvider>().FromNew().AsSingle();
+        Container.Bind<NextLevelHandler>().FromNew().AsSingle();
     }
 }

@@ -15,7 +15,7 @@ public class SceneLoader: ILevelLoader, ISimpleSceneLoader
         {
             container.BindInstance(adventureConfig).WhenInjectedInto<ConfigsInstaller>();
             container.BindInstance(levelConfig).WhenInjectedInto<ConfigsInstaller>();
-            container.BindInstance(questionsCategorie).WhenInjectedInto<QuizSystemInstaller>();
+            container.BindInstance(questionsCategorie).WhenInjectedInto<ConfigsInstaller>();
         }, (int)SceneID.StandartLevel);
     }
 

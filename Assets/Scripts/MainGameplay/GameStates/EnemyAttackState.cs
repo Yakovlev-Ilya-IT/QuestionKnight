@@ -20,7 +20,7 @@ public class EnemyAttackState : BaseLevelCycleState
 
     private void OnDied()
     {
-        Debug.Log("LOOSE");
+        _stateSwitcher.SwitchState<LooseState>();
     }
 
     public override void Stop()

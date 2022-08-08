@@ -25,7 +25,8 @@ public class LevelCycleBehaviour : IStationStateSwitcher, IDisposable
             new WaitingForAnswerState(player, scenario, this, _quizCore, _timeToAnswerHandler),
             new EnemyAttackState(player, scenario, this),
             new PlayerAttackState(player, scenario, this),
-            new WinState(player, scenario, this, levelSaver, mediator)
+            new WinState(player, scenario, this, levelSaver, mediator),
+            new LooseState(player, scenario, this, mediator)
         };
 
         _states[0].Launch();

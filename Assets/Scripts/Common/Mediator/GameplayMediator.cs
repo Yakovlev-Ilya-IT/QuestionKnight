@@ -3,7 +3,7 @@ using UnityEngine;
 public class GameplayMediator : MonoBehaviour, IGameplayMediator
 {
     [SerializeField] private WinPanel _levelWinPanel;
-    [SerializeField] private GameObject _levelLoosePanel;
+    [SerializeField] private LoosePanel _levelLoosePanel;
 
     public void CloseMenu()
     {
@@ -15,7 +15,7 @@ public class GameplayMediator : MonoBehaviour, IGameplayMediator
         throw new System.NotImplementedException();
     }
 
-    public void ShowLevelLoosePanel() => _levelLoosePanel.SetActive(true);
+    public void ShowLevelLoosePanel() => _levelLoosePanel.Open();
 
     public void ShowLevelWinPanel() => _levelWinPanel.Open();
 }

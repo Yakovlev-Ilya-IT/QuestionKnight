@@ -8,11 +8,18 @@ public class LevelSelectionInstaller : MonoInstaller
 
     public override void InstallBindings()
     {
-        Container.Bind<ZenjectSceneLoaderWrapper>().AsSingle();
-        Container.BindInterfacesAndSelfTo<SceneLoader>().AsSingle().NonLazy();
-        Container.Bind<ISaver>().To<JsonSaver>().AsSingle();
+        BindDataProviders();
+        BindMediator();
+    }
+
+    private void BindDataProviders()
+    {
         Container.Bind<LevelsDataProvider>().AsSingle();
         Container.Bind<AdventuresDataProvider>().AsSingle();
+    }
+
+    private void BindMediator()
+    {
         Container.Bind<ISceneLoadMediator>().To<SceneLoadMediator>().FromInstance(_sceneLoadMediator).AsSingle();
         Container.Bind<ILevelSelectionMediator>().To<LevelSelectionMediator>().FromInstance(_levelSelectionMediator).AsSingle();
     }

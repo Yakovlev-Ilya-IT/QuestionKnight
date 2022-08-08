@@ -6,6 +6,7 @@ public abstract class SimpleButton : MonoBehaviour
 {
     private Button _button;
     protected bool _isLock;
+
     private void Awake()
     {
         _button = GetComponent<Button>();

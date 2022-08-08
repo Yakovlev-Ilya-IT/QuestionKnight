@@ -1,34 +1,58 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Zenject;
 
-public class WinPanel : PopupWindow
+public class WinPanel : LevelResultWindow
 {
-    [SerializeField] private NextLevelButton _nextLevelButton;
-    
-    private LevelsDataProvider _levelsDataProvider;
-    private LevelConfig _levelConfig;
-    private AdventureConfig _adventureConfig;
-    private QuestionsCategorie _questionsCategorie;
+    [SerializeField] private Button _nextLevelButton;
+    private NextLevelHandler _nextLevelHandler;
+    [SerializeField] private WinPanelView _view;
 
     [Inject]
-    private void Initialize(LevelsDataProvider levelsDataProvider, AdventureConfig adventureConfig, LevelConfig levelConfig, QuestionsCategorie questionsCategorie)
+    protected void Initialize(ISceneLoadMediator mediator, NextLevelHandler nextLevelHandler)
     {
-        _levelsDataProvider = levelsDataProvider;
-        _levelConfig = levelConfig;
-        _adventureConfig = adventureConfig;
-        _questionsCategorie = questionsCategorie;
+        Initialize(mediator);
+        _view.Initialize();
+        _nextLevelHandler = nextLevelHandler;
+    }
+
+    protected override void OnEnable()
+    {
+        base.OnEnable();
+        _nextLevelButton.onClick.AddListener(OnNextLevelButtonClick);
     }
 
     public override void Open()
     {
         base.Open();
 
-        if (_levelsDataProvider.TryLoadLevel(_adventureConfig.AdventureNumber, _levelConfig.LevelNumber + 1, out LevelConfig nextLevelConfig))
-            _nextLevelButton.SetNextLevelConfig(_adventureConfig, nextLevelConfig, _questionsCategorie);
-        else
+        if (CheckEndAdventure())
+        {
             _nextLevelButton.gameObject.SetActive(false);
+            _view.SetAdventureCompleteTitle();
+        }
+        else
+        {
+            _nextLevelButton.gameObject.SetActive(true);
+            _view.SetLevelCompleteTitle();
+        }
 
+        _view.Open();
+    }
+
+    private void OnNextLevelButtonClick()
+    {
+        _mediator.GoToLevel(_nextLevelHandler.AdventureConfig, _nextLevelHandler.NextLevelConfig, _nextLevelHandler.QuestionsCategorie);
+    }
+
+    private bool CheckEndAdventure()
+    {
+        return !_nextLevelHandler.TryLoadNextLevel();
+    }
+
+    protected override void OnDisable()
+    {
+        base.OnDisable();
+        _nextLevelButton.onClick.RemoveListener(OnNextLevelButtonClick);
     }
 }
