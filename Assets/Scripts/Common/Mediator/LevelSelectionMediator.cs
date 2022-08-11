@@ -6,8 +6,8 @@ public class LevelSelectionMediator : MonoBehaviour, ILevelSelectionMediator
     [SerializeField] private Transform _adventureSelectionPanel;
     [SerializeField] private Transform _levelSelectionPanel;
     [SerializeField] private SelectionMenuTitle _menuTitle;
-    [SerializeField] private LevelFiller _levelFiller;
-    [SerializeField] private CategorieFiller _categorieFiller;
+    [SerializeField] private LevelsGridBuilder _levelFiller;
+    [SerializeField] private CategoriesGridBuilder _categorieFiller;
 
     public void OpenAdventureSelectionMenu()
     {
@@ -24,8 +24,8 @@ public class LevelSelectionMediator : MonoBehaviour, ILevelSelectionMediator
     public void SendQuestionsCategory(QuestionsCategorie questionsCategorie) => _startGameButton.QuestionsCategorieSelect(questionsCategorie);
     public void SetAdventureSelectionTitleText() => _menuTitle.SetAdventureSelectionText();
     public void SetLevelSelectionTitleText() => _menuTitle.SetLevelSelectionText();
-    public void FillLevelsGrid(AdventureConfig adventureConfig) => _levelFiller.Fill(adventureConfig);
-    public void FillQuestionsCategoriesGrid(QuestionsCategorie[] questionCategories) => _categorieFiller.Fill(questionCategories);
+    public void BuildLevelsGrid(AdventureConfig adventureConfig) => _levelFiller.Build(adventureConfig);
+    public void BuildQuestionsCategoriesGrid(QuestionsCategorie[] questionCategories) => _categorieFiller.Build(questionCategories);
     public void ClearLevelsGrid() => _levelFiller.Clear();
     public void ClearQuestionsCategoriesGrid() => _categorieFiller.Clear();
 }

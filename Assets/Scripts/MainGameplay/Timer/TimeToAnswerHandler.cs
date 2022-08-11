@@ -1,8 +1,9 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using Zenject;
 
-public class TimeToAnswerHandler : MonoBehaviour
+public class TimeToAnswerHandler : MonoBehaviour, IPause
 {
     private float _timeToAnswer;
     private float _remainigTimeToAnswer;
@@ -13,11 +14,27 @@ public class TimeToAnswerHandler : MonoBehaviour
 
     public event Action TimeToAnswerIsOver;
 
+    private PauseHandler _pauseHandler;
+
+    [Inject]
+    private void Construct(PauseHandler pauseHandler)
+    {
+        _pauseHandler = pauseHandler;
+        _pauseHandler.Add(this);
+    }
+
     public void Set(float timeToAnswer)
     {
         _timeToAnswer = timeToAnswer;
         _remainigTimeToAnswer = _timeToAnswer;
         _timeBar.SetFullFilling();
+    }
+
+    public void SetPause(bool isPaused)
+    {
+        StopCountingAnswerTime();
+        if (!isPaused)
+            StartCountingAnswerTime();
     }
 
     public void StartCountingAnswerTime()

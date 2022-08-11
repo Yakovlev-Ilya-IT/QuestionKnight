@@ -1,7 +1,7 @@
 using UnityEngine;
 using Zenject;
 
-public class AdventureFiller : MonoBehaviour
+public class AdventuresFiller : MonoBehaviour
 {
     private AdventureSelectionButton[] _adventureSelectionButtons;
 

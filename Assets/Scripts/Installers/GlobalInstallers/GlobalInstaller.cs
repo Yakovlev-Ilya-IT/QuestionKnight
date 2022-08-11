@@ -1,4 +1,4 @@
-using System.Collections;
+using System;
 using Zenject;
 
 public class GlobalInstaller : MonoInstaller
@@ -17,6 +17,5 @@ public class GlobalInstaller : MonoInstaller
     private void BindLoader()
     {
         Container.Bind<ZenjectSceneLoaderWrapper>().AsSingle();
-        Container.BindInterfacesAndSelfTo<SceneLoader>().FromNew().AsSingle();
     }
 }

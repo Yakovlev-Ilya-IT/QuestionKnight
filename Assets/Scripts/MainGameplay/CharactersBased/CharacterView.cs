@@ -44,4 +44,9 @@ public abstract class CharacterView : MonoBehaviour
     {
         AttackAnimationFinished?.Invoke();
     }
+
+    public void SetSpeedFactor(float factor)
+    {
+        _animator.speed = factor;
+    }
 }

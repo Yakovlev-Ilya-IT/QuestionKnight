@@ -1,5 +1,4 @@
 using System;
-using UnityEngine;
 
 public class LevelScenario : IEnemyTargetSetter
 {
@@ -10,13 +9,17 @@ public class LevelScenario : IEnemyTargetSetter
 
     public event Action<IDamageable> NewEnemyTargetHasBeenSet;
 
-    public LevelScenario(EnemySpawner enemySpawner, EnemyWave enemyWave)
+    private PauseHandler _pauseHandler;
+
+    public LevelScenario(EnemySpawner enemySpawner, EnemyWave enemyWave, PauseHandler pauseHandler)
     {
         _enemySpawner = enemySpawner;
         _enemySpawner.EnemyHasSpawned += OnEnemyHasSpawned;
 
         _enemyWave = enemyWave;
         _enemyWave.Init();
+
+        _pauseHandler = pauseHandler;
     }
 
     public bool TryIncreaseProgress()
@@ -41,16 +44,18 @@ public class LevelScenario : IEnemyTargetSetter
     public void OnEnemyHasSpawned(Enemy enemy)
     {
         CurrentEnemy = enemy;
+        _pauseHandler.Add(CurrentEnemy);
         NewEnemyTargetHasBeenSet?.Invoke(CurrentEnemy);
+    }
+
+    public void Recycle()
+    {
+        _pauseHandler.Remove(CurrentEnemy);
+        CurrentEnemy = null;
     }
 
     ~LevelScenario()
     {
         _enemySpawner.EnemyHasSpawned -= OnEnemyHasSpawned;
-    }
-
-    public void Recycle()
-    {
-        CurrentEnemy = null; 
     }
 }

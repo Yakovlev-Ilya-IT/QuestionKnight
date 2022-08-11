@@ -5,12 +5,19 @@ public class ServiceInstaller : MonoInstaller
 {
     [SerializeField] private GameplayMediator _gameplaMediator;
     [SerializeField] private SceneLoadMediator _sceneLoadMediator;
-
+    [SerializeField] private SceneFader _sceneFader;
     public override void InstallBindings()
     {
+        BindSceneLoader();
+        BindPauseHandler();
         BindDataProviders();
         BindMediator();
         BindSaver();
+    }
+
+    private void BindPauseHandler()
+    {
+        Container.BindInterfacesAndSelfTo<PauseHandler>().FromNew().AsSingle();
     }
 
     private void BindMediator()
@@ -28,5 +35,11 @@ public class ServiceInstaller : MonoInstaller
     {
         Container.Bind<LevelsDataProvider>().FromNew().AsSingle();
         Container.Bind<NextLevelHandler>().FromNew().AsSingle();
+    }
+
+    private void BindSceneLoader()
+    {
+        Container.Bind<SceneFader>().FromInstance(_sceneFader).AsSingle();
+        Container.BindInterfacesAndSelfTo<SceneLoader>().FromNew().AsSingle();
     }
 }

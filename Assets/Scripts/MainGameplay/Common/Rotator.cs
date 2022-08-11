@@ -1,13 +1,24 @@
 using UnityEngine;
+using Zenject;
 
-public class Rotator : MonoBehaviour
+public class Rotator : MonoBehaviour, IPause
 {
     [SerializeField] protected float _startRotateSpeed;
     protected float _rotateSpeed;
 
     private Vector3 _directionOfAxisRotation;
 
-    public void Init(Vector3 angle)
+    private PauseHandler _pauseHandler;
+    private bool _isPaused;
+
+    [Inject]
+    private void Construct(PauseHandler pauseHandler)
+    {
+        _pauseHandler = pauseHandler;
+        _pauseHandler.Add(this);
+    }
+
+    public void Initialize(Vector3 angle)
     {
         _rotateSpeed = _startRotateSpeed;
 
@@ -19,6 +30,9 @@ public class Rotator : MonoBehaviour
 
     protected void Update()
     {
+        if (_isPaused)
+            return;
+
         Rotate();
     }
 
@@ -30,5 +44,10 @@ public class Rotator : MonoBehaviour
     public void SetRotationDirection(Vector3 direction)
     {
         _directionOfAxisRotation = Vector3.Cross(direction, Vector3.forward);
+    }
+
+    public void SetPause(bool isPaused)
+    {
+        _isPaused = isPaused;
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-public class LevelFiller : MonoBehaviour
+public class LevelsGridBuilder : MonoBehaviour
 {
     [SerializeField] private LevelSelectionButton _levelButtonPrefab;
     [SerializeField] private GridLayoutGroup _grid;
@@ -23,14 +23,14 @@ public class LevelFiller : MonoBehaviour
         _mediator = mediator;
     }
 
-    public void Fill(AdventureConfig adventureConfig)
+    public void Build(AdventureConfig adventureConfig)
     {
         LevelConfig[] levels = _levelsDataProvider.LoadAll(adventureConfig.AdventureNumber);
 
         adventureConfig.LevelsCount = levels.Length;
         _saver.Save(adventureConfig);
 
-        FillLevelsGrid(levels, adventureConfig.CompleteLevels);
+        BuildLevelsGrid(levels, adventureConfig.CompleteLevels);
     }
 
     public void Clear()
@@ -43,7 +43,7 @@ public class LevelFiller : MonoBehaviour
         _levelSelectionButtons.Clear();
     }
 
-    private void FillLevelsGrid(LevelConfig[] levels, int completeLevels)
+    private void BuildLevelsGrid(LevelConfig[] levels, int completeLevels)
     {
         _levelSelectionButtons = new List<LevelSelectionButton>();
         List<ISelectable> selectables = new List<ISelectable>();

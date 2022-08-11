@@ -7,8 +7,8 @@ public interface ILevelSelectionMediator
     public void SendAdventureConfig(AdventureConfig adventureConfig);
     public void SendLevelConfig(LevelConfig levelConfig);
     public void SendQuestionsCategory(QuestionsCategorie questionsCategorie);
-    public void FillLevelsGrid(AdventureConfig adventureConfig);
-    public void FillQuestionsCategoriesGrid(QuestionsCategorie[] questionCategories);
+    public void BuildLevelsGrid(AdventureConfig adventureConfig);
+    public void BuildQuestionsCategoriesGrid(QuestionsCategorie[] questionCategories);
     public void ClearLevelsGrid();
     public void ClearQuestionsCategoriesGrid();
 }

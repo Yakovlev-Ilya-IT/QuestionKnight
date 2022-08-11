@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Health))]
-public abstract class Character : MonoBehaviour, IDamageable
+public abstract class Character : MonoBehaviour, IDamageable, IPause
 {
     protected Health _health;
     [SerializeField] private StatusBar _healthBar;
@@ -90,5 +90,10 @@ public abstract class Character : MonoBehaviour, IDamageable
 
         _health.HealthPointsIsOver -= OnDied;
         _health.GotDamage -= OnGotDamage;
+    }
+
+    public void SetPause(bool isPaused)
+    {
+        _view.SetSpeedFactor(isPaused ? 0 : 1);
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-public class CategorieFiller : MonoBehaviour
+public class CategoriesGridBuilder : MonoBehaviour
 {
     [SerializeField] private CategorieSelectionButton _categorieButtonPrefab;
     [SerializeField] private GridLayoutGroup _grid;
@@ -29,7 +29,7 @@ public class CategorieFiller : MonoBehaviour
         _mediator = mediator;
     }
 
-    public void Fill(QuestionsCategorie[] questionCategories)
+    public void Build(QuestionsCategorie[] questionCategories)
     {
         _categorieSelectionButtons = new List<CategorieSelectionButton>();
         List<ISelectable> selectables = new List<ISelectable>();

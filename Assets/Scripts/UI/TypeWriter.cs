@@ -2,15 +2,21 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 
+[RequireComponent(typeof(TMP_Text))]
 public class TypeWriter: MonoBehaviour
 {
-    [SerializeField] private float _delayBtwNewChar;
-    [SerializeField] private TMP_Text _placement;
+    [SerializeField] private float _delayBtwNewChar = 0.05f;
+    private TMP_Text _textField;
+
+    private void Awake()
+    {
+        _textField = GetComponent<TMP_Text>();
+    }
 
     public void Write(string text)
     {
         StopAllCoroutines();
-        _placement.text = "";
+        _textField.text = "";
         StartCoroutine(Type(text));
     }
 
@@ -18,7 +24,7 @@ public class TypeWriter: MonoBehaviour
     {
         foreach (char letter in text)
         {
-            _placement.text += letter;
+            _textField.text += letter;
             yield return new WaitForSeconds(_delayBtwNewChar);
         }
     }

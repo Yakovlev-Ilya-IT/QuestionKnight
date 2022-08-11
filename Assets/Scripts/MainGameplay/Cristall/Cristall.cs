@@ -14,7 +14,7 @@ public class Cristall : MonoBehaviour
     [Inject]
     public void Init()
     {
-        _cristallRotator.Init(new Vector3(Random.value, Random.value, Random.value));
+        _cristallRotator.Initialize(new Vector3(Random.value, Random.value, Random.value));
     }
 
     private void OnSwipeEnded(Vector3 direction)

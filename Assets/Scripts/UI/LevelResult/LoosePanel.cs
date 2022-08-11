@@ -19,7 +19,7 @@ public class LoosePanel : LevelResultWindow
     protected override void OnEnable()
     {
         base.OnEnable();
-        _restartLevelButton.onClick.AddListener(OnRestartLevelButton);
+        _restartLevelButton.onClick.AddListener(OnRestartLevelButtonClick);
     }
 
     public override void Open()
@@ -28,7 +28,7 @@ public class LoosePanel : LevelResultWindow
         _view.Open();
     }
 
-    private void OnRestartLevelButton()
+    private void OnRestartLevelButtonClick()
     {
         _mediator.GoToLevel(_nextLevelHandler.AdventureConfig, _nextLevelHandler.CurrentLevelConfig, _nextLevelHandler.QuestionsCategorie);
     }
@@ -36,6 +36,6 @@ public class LoosePanel : LevelResultWindow
     protected override void OnDisable()
     {
         base.OnDisable();
-        _restartLevelButton.onClick.AddListener(OnRestartLevelButton);
+        _restartLevelButton.onClick.AddListener(OnRestartLevelButtonClick);
     }
 }

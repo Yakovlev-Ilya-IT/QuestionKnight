@@ -25,8 +25,8 @@ public class AdventureSelectionButton : SimpleButton
     {
         _mediator.SendAdventureConfig(_config);
         _mediator.SetLevelSelectionTitleText();
-        _mediator.FillLevelsGrid(_config);
-        _mediator.FillQuestionsCategoriesGrid(_config.QuestionsCategories);
+        _mediator.BuildLevelsGrid(_config);
+        _mediator.BuildQuestionsCategoriesGrid(_config.QuestionsCategories);
         _mediator.OpenLevelSelectionMenu();
     }
 }
