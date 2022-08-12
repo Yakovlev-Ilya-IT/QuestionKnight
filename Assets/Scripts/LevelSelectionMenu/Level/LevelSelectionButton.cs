@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class LevelSelectionButton : SelectionButton
@@ -6,13 +7,12 @@ public class LevelSelectionButton : SelectionButton
     [SerializeField] private LevelSelectionButtonView _view;
 
     private LevelConfig LevelConfig => _levelConfig;
-    
-    private ILevelSelectionMediator _mediator;
 
-    public void Initialize(LevelConfig levelConfig, string levelNumber, ILevelSelectionMediator mediator)
+    public event Action<LevelConfig> Pressed;
+
+    public void Initialize(LevelConfig levelConfig, string levelNumber)
     {
         _levelConfig = levelConfig;
-        _mediator = mediator;
         _view.Initialize(levelNumber);
     }
 
@@ -20,7 +20,7 @@ public class LevelSelectionButton : SelectionButton
     {
         base.Click();
 
-        _mediator.SendLevelConfig(_levelConfig);
+        Pressed?.Invoke(LevelConfig);
     }
 
     public override void Lock()

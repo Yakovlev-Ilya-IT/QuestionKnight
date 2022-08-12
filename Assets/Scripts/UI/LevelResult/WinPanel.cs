@@ -5,15 +5,13 @@ using Zenject;
 public class WinPanel : LevelResultWindow
 {
     [SerializeField] private Button _nextLevelButton;
-    private NextLevelHandler _nextLevelHandler;
     [SerializeField] private WinPanelView _view;
 
     [Inject]
-    protected void Initialize(ISceneLoadMediator mediator, NextLevelHandler nextLevelHandler)
+    protected new void Initialize(IGameplayMediator mediator)
     {
-        Initialize(mediator);
+        base.Initialize(mediator);
         _view.Initialize();
-        _nextLevelHandler = nextLevelHandler;
     }
 
     protected override void OnEnable()
@@ -42,12 +40,12 @@ public class WinPanel : LevelResultWindow
 
     private void OnNextLevelButtonClick()
     {
-        _mediator.GoToLevel(_nextLevelHandler.AdventureConfig, _nextLevelHandler.NextLevelConfig, _nextLevelHandler.QuestionsCategorie);
+        _mediator.GoToNextLevel();
     }
 
     private bool CheckEndAdventure()
     {
-        return !_nextLevelHandler.TryLoadNextLevel();
+        return !_mediator.TryLoadNextLevel(out LevelConfig levelConfig);
     }
 
     protected override void OnDisable()

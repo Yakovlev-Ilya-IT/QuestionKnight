@@ -1,31 +1,37 @@
 using UnityEngine;
+using Zenject;
 
 public class LevelSelectionMediator : MonoBehaviour, ILevelSelectionMediator
 {
-    [SerializeField] private StartGameButton _startGameButton;
-    [SerializeField] private Transform _adventureSelectionPanel;
-    [SerializeField] private Transform _levelSelectionPanel;
+    [SerializeField] private AdventureSelectionDisplay _adventureSelectionDisplay;
+    [SerializeField] private LevelSelectionDisplay _levelSelectionDisplay;
     [SerializeField] private SelectionMenuTitle _menuTitle;
-    [SerializeField] private LevelsGridBuilder _levelFiller;
-    [SerializeField] private CategoriesGridBuilder _categorieFiller;
 
-    public void OpenAdventureSelectionMenu()
+    private ConfigsHolder _configsHolder;
+    private ISceneLoadMediator _sceneLoadMediator;
+
+    [Inject]
+    private void Construct(ISceneLoadMediator sceneLoadMediator)
     {
-        _adventureSelectionPanel.gameObject.SetActive(true);
-        _levelSelectionPanel.gameObject.SetActive(false);
+        _configsHolder = new ConfigsHolder();
+        _sceneLoadMediator = sceneLoadMediator;
     }
-    public void OpenLevelSelectionMenu()
+
+    public void OpenAdventureSelectionDisplay()
     {
-        _adventureSelectionPanel.gameObject.SetActive(false);
-        _levelSelectionPanel.gameObject.SetActive(true);
+        _adventureSelectionDisplay.Open();
+        _levelSelectionDisplay.Close();
     }
-    public void SendAdventureConfig(AdventureConfig adventureConfig) => _startGameButton.AdventureSelect(adventureConfig);
-    public void SendLevelConfig(LevelConfig levelConfig) => _startGameButton.LevelSelect(levelConfig);
-    public void SendQuestionsCategory(QuestionsCategorie questionsCategorie) => _startGameButton.QuestionsCategorieSelect(questionsCategorie);
+    public void OpenLevelSelectionDisplay(AdventureConfig adventureConfig)
+    {
+        _levelSelectionDisplay.Open(adventureConfig);
+        _adventureSelectionDisplay.Close();
+    }
+
     public void SetAdventureSelectionTitleText() => _menuTitle.SetAdventureSelectionText();
     public void SetLevelSelectionTitleText() => _menuTitle.SetLevelSelectionText();
-    public void BuildLevelsGrid(AdventureConfig adventureConfig) => _levelFiller.Build(adventureConfig);
-    public void BuildQuestionsCategoriesGrid(QuestionsCategorie[] questionCategories) => _categorieFiller.Build(questionCategories);
-    public void ClearLevelsGrid() => _levelFiller.Clear();
-    public void ClearQuestionsCategoriesGrid() => _categorieFiller.Clear();
+    public void SendAdventureConfig(AdventureConfig adventureConfig) => _configsHolder.AdventureSelect(adventureConfig);
+    public void SendLevelConfig(LevelConfig levelConfig) => _configsHolder.LevelSelect(levelConfig);
+    public void SendQuestionsCategory(QuestionsCategorie questionsCategorie) => _configsHolder.QuestionsCategorieSelect(questionsCategorie);
+    public void GoToSelectLevel() => _sceneLoadMediator.GoToLevel(_configsHolder.AdventureConfig, _configsHolder.LevelConfig, _configsHolder.QuestionsCategorie);
 }

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class CategorieSelectionButton : SelectionButton
@@ -5,12 +6,11 @@ public class CategorieSelectionButton : SelectionButton
     private QuestionsCategorie _questionsCategorie;
     [SerializeField] private CategorieSelectionButtonView _view;
 
-    private ILevelSelectionMediator _mediator;
+    public event Action<QuestionsCategorie> Pressed;
 
-    public void Initialize(QuestionsCategorie questionsCategorie, string questionsCategorieName, ILevelSelectionMediator mediator)
+    public void Initialize(QuestionsCategorie questionsCategorie, string questionsCategorieName)
     {
         _questionsCategorie = questionsCategorie;
-        _mediator = mediator;
         _view.Initialize(questionsCategorieName);
     }
 
@@ -18,7 +18,7 @@ public class CategorieSelectionButton : SelectionButton
     {
         base.Click();
 
-        _mediator.SendQuestionsCategory(_questionsCategorie);
+        Pressed?.Invoke(_questionsCategorie);
     }
 
     public override void Select()

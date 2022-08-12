@@ -1,18 +1,11 @@
+using System;
 using UnityEngine;
-using Zenject;
-
 public class AdventureSelectionButton : SimpleButton
 {
     private AdventureConfig _config;
     [SerializeField] private AdventureSelectionButtonView _view;
 
-    private ILevelSelectionMediator _mediator;
-
-    [Inject]
-    private void Construct(ILevelSelectionMediator mediator)
-    {
-        _mediator = mediator;
-    }
+    public event Action<AdventureConfig> Pressed;
 
     public void Initialize(AdventureConfig config)
     {
@@ -21,12 +14,20 @@ public class AdventureSelectionButton : SimpleButton
         _view.Initialize(config.AdventureNumber, config.PercentageCompletion);
     }
 
+    public override void Lock()
+    {
+        base.Lock();
+        _view.Lock();
+    }
+
+    public override void Unlock()
+    {
+        base.Unlock();
+        _view.Unlock();
+    }
+
     protected override void Click()
     {
-        _mediator.SendAdventureConfig(_config);
-        _mediator.SetLevelSelectionTitleText();
-        _mediator.BuildLevelsGrid(_config);
-        _mediator.BuildQuestionsCategoriesGrid(_config.QuestionsCategories);
-        _mediator.OpenLevelSelectionMenu();
+        Pressed?.Invoke(_config);
     }
 }

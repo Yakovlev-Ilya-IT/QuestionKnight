@@ -5,7 +5,7 @@ public abstract class Window : MonoBehaviour
 {
     private CanvasGroup _canvasGroup;
 
-    private void Awake()
+    protected void Awake()
     {
         _canvasGroup = GetComponent<CanvasGroup>();
     }

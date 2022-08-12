@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -12,16 +11,12 @@ public class PausePanel : Window
 
     [SerializeField] private PausePanelView _view;
 
-    private NextLevelHandler _nextLevelHandler;
-    private ISceneLoadMediator _sceneLoadMediator;
-    private IGameplayMediator _gameplayMediator;
+    private IGameplayMediator _mediator;
 
     [Inject]
-    protected void Initialize(ISceneLoadMediator sceneLoadMediator, IGameplayMediator gameplayMediator, NextLevelHandler nextLevelHandler)
+    protected void Initialize(IGameplayMediator mediator)
     {
-        _sceneLoadMediator = sceneLoadMediator;
-        _gameplayMediator = gameplayMediator;
-        _nextLevelHandler = nextLevelHandler;
+        _mediator = mediator;
     }
 
     private void OnEnable()
@@ -34,22 +29,22 @@ public class PausePanel : Window
 
     private void OnCloseButtonClick()
     {
-        _gameplayMediator.HidePausePanel();
+        _mediator.HidePausePanel();
     }
 
     private void OnRestartButtonClick()
     {
-        _sceneLoadMediator.GoToLevel(_nextLevelHandler.AdventureConfig, _nextLevelHandler.CurrentLevelConfig, _nextLevelHandler.QuestionsCategorie);
+        _mediator.RestartLevel();
     }
 
     private void OnMainMenuButtonClick()
     {
-        _sceneLoadMediator.GoToMainMenu();
+        _mediator.GoToMainMenu();
     }
 
     private void OnLevelSelectionButtonClick()
     {
-        _sceneLoadMediator.GoToLevelSelectionMenu();
+        _mediator.GoToLevelSelectionMenu();
     }
 
     public override void Open()
@@ -64,7 +59,7 @@ public class PausePanel : Window
         _view.Close(() => 
         {
             base.Close();
-            _gameplayMediator.Unpause();
+            _mediator.Unpause();
         });
     }
 

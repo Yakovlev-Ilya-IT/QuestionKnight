@@ -1,5 +1,6 @@
 using Zenject;
 using UnityEngine;
+using System;
 
 public class ServiceInstaller : MonoInstaller
 {
@@ -34,7 +35,6 @@ public class ServiceInstaller : MonoInstaller
     private void BindDataProviders()
     {
         Container.Bind<LevelsDataProvider>().FromNew().AsSingle();
-        Container.Bind<NextLevelHandler>().FromNew().AsSingle();
     }
 
     private void BindSceneLoader()

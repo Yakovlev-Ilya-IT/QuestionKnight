@@ -1,9 +1,10 @@
+using System;
 using UnityEngine;
 
 public class SceneLoader: ILevelLoader, ISimpleSceneLoader
 {
     private ZenjectSceneLoaderWrapper _zenjectSceneLoader;
-    private SceneFader _sceneFader; 
+    private SceneFader _sceneFader;
 
     public SceneLoader(ZenjectSceneLoaderWrapper zenjectSceneLoader, SceneFader sceneFader)
     {

@@ -6,9 +6,9 @@ public abstract class LevelResultWindow : Window
     [SerializeField] protected Button _levelSelectionMenuButton;
     [SerializeField] protected Button _mainMenuButton;
 
-    protected ISceneLoadMediator _mediator;
+    protected IGameplayMediator _mediator;
 
-    protected void Initialize(ISceneLoadMediator mediator)
+    protected void Initialize(IGameplayMediator mediator)
     {
         _mediator = mediator;
     }

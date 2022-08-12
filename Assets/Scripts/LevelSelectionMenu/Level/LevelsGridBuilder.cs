@@ -10,7 +10,6 @@ public class LevelsGridBuilder : MonoBehaviour
 
     private const int FirstButtonLevelIndex = 0;
 
-    private List<LevelSelectionButton> _levelSelectionButtons;
     private LevelsDataProvider _levelsDataProvider;
     private ISaver _saver;
     private ILevelSelectionMediator _mediator;
@@ -23,61 +22,60 @@ public class LevelsGridBuilder : MonoBehaviour
         _mediator = mediator;
     }
 
-    public void Build(AdventureConfig adventureConfig)
+    public LevelSelectionButton[] Build(AdventureConfig adventureConfig)
     {
         LevelConfig[] levels = _levelsDataProvider.LoadAll(adventureConfig.AdventureNumber);
 
         adventureConfig.LevelsCount = levels.Length;
         _saver.Save(adventureConfig);
 
-        BuildLevelsGrid(levels, adventureConfig.CompleteLevels);
+        return BuildLevelsGrid(levels, adventureConfig.CompleteLevels);
     }
 
-    public void Clear()
+    public void Clear(LevelSelectionButton[] buttons)
     {
-        foreach (var button in _levelSelectionButtons)
+        foreach (var button in buttons)
         {
             Destroy(button.gameObject);
         }
-
-        _levelSelectionButtons.Clear();
     }
 
-    private void BuildLevelsGrid(LevelConfig[] levels, int completeLevels)
+    private LevelSelectionButton[] BuildLevelsGrid(LevelConfig[] levels, int completeLevels)
     {
-        _levelSelectionButtons = new List<LevelSelectionButton>();
+        LevelSelectionButton[] levelSelectionButtons = new LevelSelectionButton[levels.Length];
         List<ISelectable> selectables = new List<ISelectable>();
 
         for (int i = 0; i < levels.Length; i++)
         {
             LevelSelectionButton levelButton = Instantiate(_levelButtonPrefab, _grid.transform);
-            levelButton = InitializeButton(levelButton, levels[i], i + 1, completeLevels);
+            InitializeButton(levelButton, levels[i], i + 1, completeLevels);
 
-            _levelSelectionButtons.Add(levelButton);
+            levelSelectionButtons[i] = levelButton;
             selectables.Add(levelButton);
         }
 
         SelectionHandler buttonSelectionHandler = new SelectionHandler(selectables);
+
+        return levelSelectionButtons;
     }
 
-    private LevelSelectionButton InitializeButton(LevelSelectionButton levelButton, LevelConfig levelConfig, int levelNumber, int completeLevels)
+    private void InitializeButton(LevelSelectionButton button, LevelConfig levelConfig, int levelNumber, int completeLevels)
     {
-        levelButton.Initialize(levelConfig, (levelNumber).ToString(), _mediator);
+        button.Initialize(levelConfig, (levelNumber).ToString());
 
         if (levelNumber > completeLevels + 1)
         {
-            levelButton.Lock();
+            button.Lock();
+            return;
         }
         else
         {
-            levelButton.Unlock();
+            button.Unlock();
             if(levelNumber - 1 == FirstButtonLevelIndex)
             {
                 _mediator.SendLevelConfig(levelConfig);
-                levelButton.Select();
+                button.Select();
             }
         }
-
-        return levelButton;
     }
 }

@@ -1,33 +1,24 @@
 using UnityEngine;
 using Zenject;
 
-public class AdventuresFiller : MonoBehaviour
+public class AdventureButtonsFiller : MonoBehaviour
 {
-    private AdventureSelectionButton[] _adventureSelectionButtons;
-
     private AdventuresDataProvider _adventuresDataProvider;
 
     private const int FirstAventureButtonIndex = 0;
     private const int FullPercentageCompletion = 100;
 
     [Inject]
-    private void Initialize(AdventuresDataProvider adventuresDataProvider)
+    private void Construct(AdventuresDataProvider adventuresDataProvider)
     {
         _adventuresDataProvider = adventuresDataProvider;
     }
 
-    private void Awake()
+    public void Fill(AdventureSelectionButton[] adventureSelectionButtons)
     {
-        _adventureSelectionButtons = GetComponentsInChildren<AdventureSelectionButton>();
-
         AdventureConfig[] adventureConfigs = _adventuresDataProvider.Load();
 
-        FillAdventureButtons(adventureConfigs);
-    }
-
-    private void FillAdventureButtons(AdventureConfig[] adventureConfigs)
-    {
-        if(adventureConfigs.Length != _adventureSelectionButtons.Length)
+        if (adventureConfigs.Length != adventureSelectionButtons.Length)
         {
             Debug.LogError("The number of adventure settings does not match the number of available buttons");
             return;
@@ -36,9 +27,9 @@ public class AdventuresFiller : MonoBehaviour
         for (int i = 0; i < adventureConfigs.Length; i++)
         {
             if(i == FirstAventureButtonIndex)
-                InitializeButton(_adventureSelectionButtons[i], adventureConfigs[i], FullPercentageCompletion);
+                InitializeButton(adventureSelectionButtons[i], adventureConfigs[i], FullPercentageCompletion);
             else
-                InitializeButton(_adventureSelectionButtons[i], adventureConfigs[i], adventureConfigs[i - 1].PercentageCompletion);
+                InitializeButton(adventureSelectionButtons[i], adventureConfigs[i], adventureConfigs[i - 1].PercentageCompletion);
         }
     }
 

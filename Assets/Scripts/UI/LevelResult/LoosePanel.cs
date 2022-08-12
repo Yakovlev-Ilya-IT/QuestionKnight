@@ -5,15 +5,13 @@ using Zenject;
 public class LoosePanel : LevelResultWindow
 {
     [SerializeField] private Button _restartLevelButton;
-    private NextLevelHandler _nextLevelHandler;
     [SerializeField] LoosePanelView _view;
 
     [Inject]
-    protected void Initialize(ISceneLoadMediator mediator, NextLevelHandler nextLevelHandler)
+    protected new void Initialize(IGameplayMediator mediator)
     {
-        Initialize(mediator);
+        base.Initialize(mediator);
         _view.Initialize();
-        _nextLevelHandler = nextLevelHandler;
     }
 
     protected override void OnEnable()
@@ -30,7 +28,7 @@ public class LoosePanel : LevelResultWindow
 
     private void OnRestartLevelButtonClick()
     {
-        _mediator.GoToLevel(_nextLevelHandler.AdventureConfig, _nextLevelHandler.CurrentLevelConfig, _nextLevelHandler.QuestionsCategorie);
+        _mediator.RestartLevel();
     }
 
     protected override void OnDisable()

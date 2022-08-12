@@ -11,8 +11,8 @@ public static class CanvasGroupExtension
 
     public static void OpenWindow(this CanvasGroup canvasGroup)
     {
-        canvasGroup.alpha = 1f;
         canvasGroup.interactable = true;
         canvasGroup.blocksRaycasts = true;
+        canvasGroup.alpha = 1f;
     }
 }

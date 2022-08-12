@@ -3403,8 +3403,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f8520773394d314bbd881f1059284c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _levelConfig: {fileID: 11400000, guid: 01b2dcf180d816449988b274b7046803, type: 2}
   _adventureConfig: {fileID: 11400000, guid: 4aa0b8d9c008bcb468708dce698ff7ea, type: 2}
+  _levelConfig: {fileID: 11400000, guid: e6c5828cd88b7354d8c8122c39fcafc8, type: 2}
   _questionsCategorie: 3
 --- !u!1 &1583768066
 GameObject:

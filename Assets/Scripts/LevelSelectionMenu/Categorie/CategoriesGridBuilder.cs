@@ -10,8 +10,6 @@ public class CategoriesGridBuilder : MonoBehaviour
 
     private const int DefaultCategorieButtonIndex = 0;
 
-    private List<CategorieSelectionButton> _categorieSelectionButtons;
-
     private readonly Dictionary<QuestionsCategorie, string> _questionCategorieToCategorieName = new Dictionary<QuestionsCategorie, string>()
     {
         {QuestionsCategorie.Literature, "Литература"},
@@ -29,36 +27,41 @@ public class CategoriesGridBuilder : MonoBehaviour
         _mediator = mediator;
     }
 
-    public void Build(QuestionsCategorie[] questionCategories)
+    public CategorieSelectionButton[] Build(QuestionsCategorie[] questionCategories)
     {
-        _categorieSelectionButtons = new List<CategorieSelectionButton>();
+        CategorieSelectionButton[]  categorieSelectionButtons = new CategorieSelectionButton[questionCategories.Length];
         List<ISelectable> selectables = new List<ISelectable>();
 
         for (int i = 0; i < questionCategories.Length; i++)
         {
             CategorieSelectionButton categorieSelectionButton = Instantiate(_categorieButtonPrefab, _grid.transform);
-            categorieSelectionButton.Initialize(questionCategories[i], _questionCategorieToCategorieName[questionCategories[i]], _mediator);
+            InitializeButton(categorieSelectionButton, i, questionCategories[i], _questionCategorieToCategorieName[questionCategories[i]]);
 
-            if (i == DefaultCategorieButtonIndex)
-            {
-                _mediator.SendQuestionsCategory(questionCategories[i]);
-                categorieSelectionButton.Select();
-            }
-
-            _categorieSelectionButtons.Add(categorieSelectionButton);
+            categorieSelectionButtons[i] = categorieSelectionButton;
             selectables.Add(categorieSelectionButton);
         }
 
         SelectionHandler buttonSelectionHandler = new SelectionHandler(selectables);
+
+        return categorieSelectionButtons;
     }
 
-    public void Clear()
+    private void InitializeButton(CategorieSelectionButton button, int categorieNumber, QuestionsCategorie categorie, string categorieName)
     {
-        foreach (var button in _categorieSelectionButtons)
+        button.Initialize(categorie, categorieName);
+
+        if (categorieNumber == DefaultCategorieButtonIndex)
+        {
+            _mediator.SendQuestionsCategory(categorie);
+            button.Select();
+        }
+    }
+
+    public void Clear(CategorieSelectionButton[] buttons)
+    {
+        foreach (var button in buttons)
         {
             Destroy(button.gameObject);
         }
-
-        _categorieSelectionButtons.Clear();
     }
 }
