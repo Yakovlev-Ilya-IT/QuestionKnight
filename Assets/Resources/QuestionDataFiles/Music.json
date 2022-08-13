@@ -1,0 +1,529 @@
+[
+  {
+    "QuestionText": "Шальная императрица",
+    "Answers": [
+      {
+        "AnswerText": "Ирина Аллегрова",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Лариса Долина",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Алла Пугачёва",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Где написана группа крови у Виктора Цоя?",
+    "Answers": [
+      {
+        "AnswerText": "На рукаве",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "В медицинской карте",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "На плече",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Вместе с кем T-fest исполняет трек Ламбада?",
+    "Answers": [
+      {
+        "AnswerText": "Скриптонит",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Баста",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Тимати",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Что советует группа Каста, если вокруг шум?",
+    "Answers": [
+      {
+        "AnswerText": "Не кипишуй",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Не переживай",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Успокойся",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Татуировки на плечах у Сергея Лазарева",
+    "Answers": [
+      {
+        "AnswerText": "Крылья",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Бабочки",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Музыкальные ноты",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Где нужно искать Тимати?",
+    "Answers": [
+      {
+        "AnswerText": "В клубе",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "У бара",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Дома",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Лейбл, основанный Тимати",
+    "Answers": [
+      {
+        "AnswerText": "Black Star",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Gazgolder",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Record",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Лейбл, основанный Бастой",
+    "Answers": [
+      {
+        "AnswerText": "Gazgolder",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Black Star",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Скриптонит",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Настоящее имя Скриптонита",
+    "Answers": [
+      {
+        "AnswerText": "Адиль",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Мигель",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Кирилл",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Настоящее имя Басты",
+    "Answers": [
+      {
+        "AnswerText": "Василий Вакуленко",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Кирилл Бледный",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Максим Матвеев",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Какие явления в доме Скриптонита?",
+    "Answers": [
+      {
+        "AnswerText": "Паранормальные",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Нормальные",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Погодные",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Ханна Монтана это",
+    "Answers": [
+      {
+        "AnswerText": "Майли Сайрус",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Селена Гомес",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Деми Ловато",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Сколько проблем у JAY-Z?",
+    "Answers": [
+      {
+        "AnswerText": "99",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "100",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "999",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "С кем Lady Gaga исполнила песню Telephone?",
+    "Answers": [
+      {
+        "AnswerText": "Beyonce",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Ariana Grande",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Nicki Minaj",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Настоящее имя Eminem?",
+    "Answers": [
+      {
+        "AnswerText": "Маршалл",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Джеймс",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Патрик",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "В какой группе раньше состоял Harry Styles?",
+    "Answers": [
+      {
+        "AnswerText": "One direction",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "30 seconds to Mars",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Nirvana",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Какой репер был наставником в одном из сезонов шоу Голос?",
+    "Answers": [
+      {
+        "AnswerText": "Баста",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Скриптонит",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Тимати",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "В каком сериале снялась Майли Сайрус в 2019 году?",
+    "Answers": [
+      {
+        "AnswerText": "Чёрное зеркало",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Игра престолов",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Ханна Монтана",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "К какому сериалу выпустили саундтрек Imagine Dragons?",
+    "Answers": [
+      {
+        "AnswerText": "Аркейн",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Игра престолов",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Друзья",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Солист группы Linkin park?",
+    "Answers": [
+      {
+        "AnswerText": "Честер",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Маршалл",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Джаред",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Сколько лет было Billie Eilish, когда вышла песня Bad guy?",
+    "Answers": [
+      {
+        "AnswerText": "17 лет",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "16 лет",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "18 лет",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Сколько альбомов у Скриптонита?",
+    "Answers": [
+      {
+        "AnswerText": "Четыре",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Девять",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Один",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Лучший друг Og buda",
+    "Answers": [
+      {
+        "AnswerText": "Mayot",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Morgenstern",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "SODA LUV",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "GONE.Fludd является участником",
+    "Answers": [
+      {
+        "AnswerText": "GLAM GO GANG!",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Melon Music",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Black Star",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Какой трек у Morgensterna считается несостоявшимся дуэтом?",
+    "Answers": [
+      {
+        "AnswerText": "Ice",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Cadillac",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Вот так",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Сколько песен выпустили Morgenstern и АК-47?",
+    "Answers": [
+      {
+        "AnswerText": "Две",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Одну",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Три",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Какой репер придумал танец локтей?",
+    "Answers": [
+      {
+        "AnswerText": "L'one",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Тимати",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Егор Крид",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Сколько пуль в барабане у Егора Крида в треке Сердцеедка?",
+    "Answers": [
+      {
+        "AnswerText": "Пять",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Шесть",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Четыре",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Последний альбом Oxxxymirona",
+    "Answers": [
+      {
+        "AnswerText": "Красота и уродство",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Горгород",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Вечный жид",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Сколько участников в BTS?",
+    "Answers": [
+      {
+        "AnswerText": "Семь",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Шесть",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Восемь",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "С кем не было фита у BTS?",
+    "Answers": [
+      {
+        "AnswerText": "TXT",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Coldplay",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Nicki Minaj",
+        "IsCorrect": false
+      }
+    ]
+  }
+]

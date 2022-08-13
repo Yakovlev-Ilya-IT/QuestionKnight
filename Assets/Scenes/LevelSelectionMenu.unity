@@ -4436,6 +4436,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1858188885}
     m_Modifications:
     - target: {fileID: 1106704610897272778, guid: 581448993218ef449866560339124a8d, type: 3}
+      propertyPath: _button
+      value: 
+      objectReference: {fileID: 1398674625}
+    - target: {fileID: 1106704610897272778, guid: 581448993218ef449866560339124a8d, type: 3}
       propertyPath: _backgroundStandartColor.b
       value: 0.60784316
       objectReference: {fileID: 0}
@@ -4461,6 +4465,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6993587227482622615, guid: 581448993218ef449866560339124a8d, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993587227482622615, guid: 581448993218ef449866560339124a8d, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993587227482622615, guid: 581448993218ef449866560339124a8d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993587227482622615, guid: 581448993218ef449866560339124a8d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993587227482622615, guid: 581448993218ef449866560339124a8d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6993587227482622615, guid: 581448993218ef449866560339124a8d, type: 3}

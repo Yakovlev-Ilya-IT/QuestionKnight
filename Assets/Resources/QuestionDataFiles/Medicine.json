@@ -17,6 +17,261 @@
     ]
   },
   {
+    "QuestionText": "Куда течёт кровь по артериям?",
+    "Answers": [
+      {
+        "AnswerText": "От сердца",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "К сердцу",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Вниз",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Куда течёт кровь по венам?",
+    "Answers": [
+      {
+        "AnswerText": "К сердцу",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "От сердца",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Вверх",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Самая большая кость",
+    "Answers": [
+      {
+        "AnswerText": "Бедренная",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Плечевая",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Лучевая",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Чем врачи слушают лёгкие?",
+    "Answers": [
+      {
+        "AnswerText": "Стетоскоп",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Монометр",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Термометр",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Анаэробные бактерии вызывают",
+    "Answers": [
+      {
+        "AnswerText": "Гангрену",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Асфиксию",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Головную боль",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Асфиксия это",
+    "Answers": [
+      {
+        "AnswerText": "Удушье",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Кровохарканье",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Рвота",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Витамин красоты",
+    "Answers": [
+      {
+        "AnswerText": "Е",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "А",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "В",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Витамины-антиоксиданты",
+    "Answers": [
+      {
+        "AnswerText": "А, Е, С",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "А, Д, К",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Е, С, К",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Витамин, защищающий от кровопотери",
+    "Answers": [
+      {
+        "AnswerText": "К",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Д",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "А",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Диплопия это",
+    "Answers": [
+      {
+        "AnswerText": "Двоение в глазах",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Учащённое дыхание",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Урежённое дыхание",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Тахикардия это",
+    "Answers": [
+      {
+        "AnswerText": "ЧСС больше 90",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "ЧСС больше 70",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "ЧСС меньше 60",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Брадикадия это",
+    "Answers": [
+      {
+        "AnswerText": "ЧСС меньше 60",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "ЧСС меньше 40",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "ЧСС больше 80",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Сколько видом рецепторных бланков существует?",
+    "Answers": [
+      {
+        "AnswerText": "4",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "3",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "2",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Стойкое отстуствие сознания это",
+    "Answers": [
+      {
+        "AnswerText": "Кома",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Сон",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Сопор",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Анафилактический шок бывает при",
+    "Answers": [
+      {
+        "AnswerText": "Аллергии",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Кровопотере",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Отравлении",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
     "QuestionText": "Из каких частей состоит кровь?",
     "Answers": [
       {

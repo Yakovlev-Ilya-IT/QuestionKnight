@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: AdventureConfig2
   m_EditorClassIdentifier: 
   _adventureNumber: 2
-  _questionsCategories: 030000000400000001000000
+  _questionsCategories: 020000000100000005000000
+  _percentageCompletionPreviousAdventureToOpen: 50

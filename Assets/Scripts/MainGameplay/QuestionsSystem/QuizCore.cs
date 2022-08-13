@@ -11,11 +11,13 @@ public class QuizCore
 
     private readonly Dictionary<QuestionsCategorie, string> _questionCategorieToCategorieFileName = new Dictionary<QuestionsCategorie, string>()
     {
-        {QuestionsCategorie.Literature, "AlexGamerQuestions"},
-        {QuestionsCategorie.Music, "SongQuestion"},
-        {QuestionsCategorie.Mathematics, "DotaQuestions"},
-        {QuestionsCategorie.RussianLanguage, "SimpleQuestions"},
-        {QuestionsCategorie.Medicine, "MedicineQuestions"}
+        {QuestionsCategorie.Literature, "Literature"},
+        {QuestionsCategorie.Music, "Music"},
+        {QuestionsCategorie.Math, "Math"},
+        {QuestionsCategorie.RussianLanguage, "RussianLanguage"},
+        {QuestionsCategorie.AlexGamer, "AlexGamer"},
+        {QuestionsCategorie.Geography, "Geography"},
+        {QuestionsCategorie.Medicine, "Medicine"}
     };
 
     public QuizCore(IAnswerHandler answerHandler, QuizItemHolder quizItemHolder, QuestionsCategorie questionsCategorie)

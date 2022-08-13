@@ -14,8 +14,10 @@ public class CategoriesGridBuilder : MonoBehaviour
     {
         {QuestionsCategorie.Literature, "Литература"},
         {QuestionsCategorie.Music, "Музыка"},
-        {QuestionsCategorie.Mathematics, "Математика"},
+        {QuestionsCategorie.Math, "Математика"},
         {QuestionsCategorie.RussianLanguage, "Русский язык"},
+        {QuestionsCategorie.AlexGamer, "AlexGamer"},
+        {QuestionsCategorie.Geography, "География"},
         {QuestionsCategorie.Medicine, "Медицина"}
     };
 

@@ -1,0 +1,682 @@
+[
+  {
+    "QuestionText": "Автор произведения Мёртвые души",
+    "Answers": [
+      {
+        "AnswerText": "Н. В. Гоголь",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Ф. М. Достоевский",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "А. С. Пушкин",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Что такое эпитет?",
+    "Answers": [
+      {
+        "AnswerText": "Образное определение",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Скрытое сравнение",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Комплимент",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Что такое аллегория?",
+    "Answers": [
+      {
+        "AnswerText": "Иносказание",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Образное определение",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Преуменьшение",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Что такое метонимия?",
+    "Answers": [
+      {
+        "AnswerText": "Подразумевание под частью целого",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Подразумевание под целым части",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Скрытое сравнение",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Что такое гипербола?",
+    "Answers": [
+      {
+        "AnswerText": "Сильное преувеличение",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Скрытое сравнение",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Скрытая насмешка",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Что такое анафора?",
+    "Answers": [
+      {
+        "AnswerText": "Повтор в начале строки",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Повтор в конце строки",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Противопоставление",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Что такое антитеза?",
+    "Answers": [
+      {
+        "AnswerText": "Противопоставление",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Скрытая насмешка",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Иносказание",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Что такое оксюморон?",
+    "Answers": [
+      {
+        "AnswerText": "Сочетание несочитаемого",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Умолчание",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Образное выражение",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Что такое литота?",
+    "Answers": [
+      {
+        "AnswerText": "Сильное преуменьшение",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Сильное преувеличение",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Скрытое сравнение",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Что такое метафора?",
+    "Answers": [
+      {
+        "AnswerText": "Скрытое сравнение",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Образное определение",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Иносказание",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Что такое ирония?",
+    "Answers": [
+      {
+        "AnswerText": "Скрытая насмешка",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Явная насмшка",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Преувеличение",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Самое известное произведение А. С. Грибоедова",
+    "Answers": [
+      {
+        "AnswerText": "Горе от ума",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Недоросль",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Обломов",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Сколько романов написал Ф. М. Достоевский?",
+    "Answers": [
+      {
+        "AnswerText": "8",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "9",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "17",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Как звали главного героя романа Преступление и наказание?",
+    "Answers": [
+      {
+        "AnswerText": "Родион Раскольников",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Илья Обломов",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Николай Ставрогин",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Сколько книг в цикле про Гарри Поттера?",
+    "Answers": [
+      {
+        "AnswerText": "7",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "8",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "6",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Лучший друг Гарри Поттера",
+    "Answers": [
+      {
+        "AnswerText": "Рон Уизли",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Драко Малфой",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Невилл Долгопупс",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Сколько было братьев Карамазовых в одноимённой книге?",
+    "Answers": [
+      {
+        "AnswerText": "Трое",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Двое",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Пятеро",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Как за спиной называли Льва Мышкина?",
+    "Answers": [
+      {
+        "AnswerText": "Идиот",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Гений",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Сирота",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Чем убил старуху Родион Раскольников?",
+    "Answers": [
+      {
+        "AnswerText": "Топором",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Лопатой",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Ножом",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Какой корпус описывал А. И. Солженицын в своём произведении?",
+    "Answers": [
+      {
+        "AnswerText": "Раковый",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Кадетский",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Крабовый",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Возлюбленную Евгения Онегина звали",
+    "Answers": [
+      {
+        "AnswerText": "Татьяна",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Анастасия",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Мария",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Помощник Шерлока Холмса",
+    "Answers": [
+      {
+        "AnswerText": "Доктор Ватсон",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Никто",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Мери Ватсон",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Всадник без головы написал",
+    "Answers": [
+      {
+        "AnswerText": "Т. М. Рид",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Джек Лондон",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Э. Хемингуэй",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "К чему пристрастился Булгаков?",
+    "Answers": [
+      {
+        "AnswerText": "Морфий",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Спирт",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Казино",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Верный друг Тома Сойера?",
+    "Answers": [
+      {
+        "AnswerText": "Гекльберри Финн",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Джим",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Марк Твен",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "В каком произведении Куприна описывается жизнь публичного дома?",
+    "Answers": [
+      {
+        "AnswerText": "Яма",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Выстрел",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Гранатовый браслет",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Сколько историй за день рассказывали герои Декамерона?",
+    "Answers": [
+      {
+        "AnswerText": "10",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "5",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "9",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "О ком идёт речь в стихотворении М. Ю. Лермонтова Смерть поэта?",
+    "Answers": [
+      {
+        "AnswerText": "А. С. Пушкин",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "А. А. Блок",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "С. А. Есенин",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Какой человек пришёл к Есенину в одноимённом произведении?",
+    "Answers": [
+      {
+        "AnswerText": "Чёрный",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Пьяный",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Злой",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Настоящее имя Максима Горького?",
+    "Answers": [
+      {
+        "AnswerText": "Алексей Пешков",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Александр Скороходов",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Максим Коньков",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Из чего готовил духи главный герой романа Парфюмер?",
+    "Answers": [
+      {
+        "AnswerText": "Из красавиц",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Из цветов",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Из девушек",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Как звали сыновей Тараса Бульбы?",
+    "Answers": [
+      {
+        "AnswerText": "Андрей и Остап",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Александр и Тарас",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Николай и Алексей",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Чем закончилась история Анны Карениной?",
+    "Answers": [
+      {
+        "AnswerText": "Она бросилась под поезд",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Она вышла замуж",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Выбросилась из окна",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Самое известное произведение У. Коллинза?",
+    "Answers": [
+      {
+        "AnswerText": "Женщина в белом",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Декамерон",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Последний из могикан",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "На чём летал барон Мюнхгаузен?",
+    "Answers": [
+      {
+        "AnswerText": "На пушечном ядре",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "На метле",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "На дельтоплане",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "От чего погиб Евгений Базаров?",
+    "Answers": [
+      {
+        "AnswerText": "От тифа",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "От чумы",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "От ножа",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "От чего спасались главные герои книги Декамерон?",
+    "Answers": [
+      {
+        "AnswerText": "От чумы",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "От погони",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "От холеры",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "В каком жанре пишет Б. Акунин?",
+    "Answers": [
+      {
+        "AnswerText": "Детектив",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Ужасы",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Любовные романы",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Кем был Евгений Базаров?",
+    "Answers": [
+      {
+        "AnswerText": "Нигилист",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Анархист",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Коммунист",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Чьё восстание описывается в произведении Капитанская дочка?",
+    "Answers": [
+      {
+        "AnswerText": "Емельяна Пугачёва",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Степана Разина",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Крестьян",
+        "IsCorrect": false
+      }
+    ]
+  }
+]

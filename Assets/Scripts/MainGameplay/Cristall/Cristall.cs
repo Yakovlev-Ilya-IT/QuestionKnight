@@ -4,7 +4,6 @@ using Zenject;
 public class Cristall : MonoBehaviour
 {
     [SerializeField] private CristallRotator _cristallRotator;
-    [SerializeField] private CristallSwipeHandler _cristallSwipeHandler;
 
     private void OnEnable()
     {

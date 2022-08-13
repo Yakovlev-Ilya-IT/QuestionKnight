@@ -1,8 +1,10 @@
 public enum QuestionsCategorie 
 {
     Literature = 0,
-    Mathematics,
+    Math,
     RussianLanguage,
     Music,
-    Medicine
+    Medicine,
+    Geography,
+    AlexGamer
 }

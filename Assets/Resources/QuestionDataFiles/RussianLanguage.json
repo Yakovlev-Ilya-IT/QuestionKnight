@@ -1,0 +1,597 @@
+[
+  {
+    "QuestionText": "Значение слова Дефиле",
+    "Answers": [
+      {
+        "AnswerText": "Демонстрация одежды",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Тренировка с мячом",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Вид танца",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Значение слова Кашпо",
+    "Answers": [
+      {
+        "AnswerText": "Сосуд для цветов",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Вышивка",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Декоративное растение",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Значение слова Прокрастинация",
+    "Answers": [
+      {
+        "AnswerText": "Откладывание на потом",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Лень",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Взросление",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Значение слова Дебаты",
+    "Answers": [
+      {
+        "AnswerText": "Обмен мыслями",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Спор",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Ругань",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Значение слова Протагонист",
+    "Answers": [
+      {
+        "AnswerText": "Главный герой",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Отрицательный персонаж",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Автор книги",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Значение слова Визави",
+    "Answers": [
+      {
+        "AnswerText": "Человек напротив",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Приглашение",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Светская беседа",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Значение слова Пенсне",
+    "Answers": [
+      {
+        "AnswerText": "Очки без дужек",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Очки на один глаз",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Кошелёк",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Значение слова Портмоне",
+    "Answers": [
+      {
+        "AnswerText": "Мужской кошелёк",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Кожаный бумажник",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Ножны",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Значение слова Апогей",
+    "Answers": [
+      {
+        "AnswerText": "Высшая точка",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Пик славы",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Тюремный срок",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Значение слова Контрибуция",
+    "Answers": [
+      {
+        "AnswerText": "Плата проигравшего государства",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Международный договор",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Карточный долг",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Значение выражения 7 пятниц на неделе",
+    "Answers": [
+      {
+        "AnswerText": "Переменчивость",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Отдых",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Постоянство",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Значение выражения Как с гуся вода",
+    "Answers": [
+      {
+        "AnswerText": "Безразлично",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Медленно",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Привычно",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Значение слова Фразеологизм",
+    "Answers": [
+      {
+        "AnswerText": "Устойчивое выражение",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Пословица",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Присказка",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Диле...а",
+    "Answers": [
+      {
+        "AnswerText": "мм",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "м",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "-",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "И..ку..тво",
+    "Answers": [
+      {
+        "AnswerText": "с, сс",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "с, с",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "сс, с",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Как правильно?",
+    "Answers": [
+      {
+        "AnswerText": "Асимметрия",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Ассиметрия",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Асиметрия",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Где ударение поставлено правильно?",
+    "Answers": [
+      {
+        "AnswerText": "факсИмиле",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "факсимилЕ",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "фАксимиле",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Где ударение поставлено правильно?",
+    "Answers": [
+      {
+        "AnswerText": "подрОстковый",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "подросткОвый",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "пОдростковый",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Где ударение поставлено правильно?",
+    "Answers": [
+      {
+        "AnswerText": "оптОвый",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "шарфЫ",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "щАвель",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Где ударение поставлено правильно?",
+    "Answers": [
+      {
+        "AnswerText": "диспансЕр",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "диспАнсер",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "дИспансер",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Где ударение поставлено правильно?",
+    "Answers": [
+      {
+        "AnswerText": "завИдно",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "зАвидно",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "аэропортА",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Где ударение поставлено правильно?",
+    "Answers": [
+      {
+        "AnswerText": "звОнит",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "звонИт",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "клалА",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Где ударение поставлено правильно?",
+    "Answers": [
+      {
+        "AnswerText": "избалОванный",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "избАлованный",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "избаловАнный",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Где ударение поставлено правильно?",
+    "Answers": [
+      {
+        "AnswerText": "донЕльзя",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "дОнельзя",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "донельзЯ",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Где ударение поставлено правильно?",
+    "Answers": [
+      {
+        "AnswerText": "слИвовый",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "сливОвый",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "тортЫ",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Где ударение поставлено правильно?",
+    "Answers": [
+      {
+        "AnswerText": "добелА",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "дОбела",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "добЕла",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Как правильно?",
+    "Answers": [
+      {
+        "AnswerText": "экс-чемпион",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "эксчемпион",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "экс чемпион",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Как правильно?",
+    "Answers": [
+      {
+        "AnswerText": "ни за что",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "низачто",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "ни зачто",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Как правильно?",
+    "Answers": [
+      {
+        "AnswerText": "бок о бок",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "бок обок",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "бок-о-бок",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Где написано правильно?",
+    "Answers": [
+      {
+        "AnswerText": "Привилегия",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Превередливый",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Принебрежение",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Где написано правильно?",
+    "Answers": [
+      {
+        "AnswerText": "Пребывать на отдыхе",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Притворить в жизнь",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Преступить к работе",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Где написано правильно?",
+    "Answers": [
+      {
+        "AnswerText": "Причуда",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Превилегия",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Премитивный",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Где написано правильно?",
+    "Answers": [
+      {
+        "AnswerText": "Предание",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Присечь",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Преоритет",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Где написано правильно?",
+    "Answers": [
+      {
+        "AnswerText": "Привередливый",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Придание",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Преказчик",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Как правильно?",
+    "Answers": [
+      {
+        "AnswerText": "точь-в-точь",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "точь вточь",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "точь в точь",
+        "IsCorrect": false
+      }
+    ]
+  }
+]

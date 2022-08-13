@@ -1,0 +1,597 @@
+[
+  {
+    "QuestionText": "7*8+54=",
+    "Answers": [
+      {
+        "AnswerText": "110",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "100",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "115",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "100-(72/8+11)*5=",
+    "Answers": [
+      {
+        "AnswerText": "0",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "10",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "20",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "12х+66=210",
+    "Answers": [
+      {
+        "AnswerText": "х=12",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "х=10",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "х=7",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "135/(6*8-198/6)=",
+    "Answers": [
+      {
+        "AnswerText": "9",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "15",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "5",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "7,5+99/6=",
+    "Answers": [
+      {
+        "AnswerText": "24",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "20",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "22",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "719*2-73=",
+    "Answers": [
+      {
+        "AnswerText": "1365",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "1218",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "1217",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "(86+38)/4+9=",
+    "Answers": [
+      {
+        "AnswerText": "40",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "30",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "50",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "77*(7+7/7)-7=",
+    "Answers": [
+      {
+        "AnswerText": "609",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "610",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "611",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "(55-5)*5-5-55=",
+    "Answers": [
+      {
+        "AnswerText": "190",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "180",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "170",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "(8+8)*(8+8)=",
+    "Answers": [
+      {
+        "AnswerText": "256",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "279",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "164",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "(99/9+9)*9=",
+    "Answers": [
+      {
+        "AnswerText": "180",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "170",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "169",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "44*(х+х)+х/х=353",
+    "Answers": [
+      {
+        "AnswerText": "х=4",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "х=3",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "х=1",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "9+9/9+9*9-9=",
+    "Answers": [
+      {
+        "AnswerText": "82",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "91",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "75",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "3/3*(3*3)*3/3+3=",
+    "Answers": [
+      {
+        "AnswerText": "12",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "9",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "3",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "(7*9-18)/5=",
+    "Answers": [
+      {
+        "AnswerText": "9",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "7",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "5",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "17*17*17=",
+    "Answers": [
+      {
+        "AnswerText": "4913",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "4624",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "5017",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "6*(2,7+1,4)/3-2,5=",
+    "Answers": [
+      {
+        "AnswerText": "5,7",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "5,6",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "4,6",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "3,44/0,4+3*8-2,4=",
+    "Answers": [
+      {
+        "AnswerText": "30,2",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "30",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "29,6",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "(3/3+3)*(3+3)=",
+    "Answers": [
+      {
+        "AnswerText": "24",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "27",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "30",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "(55-х-х)/х=9",
+    "Answers": [
+      {
+        "AnswerText": "х=5",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "х=3",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "х=7",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "(77-х)/х=6",
+    "Answers": [
+      {
+        "AnswerText": "х=11",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "х=7",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "х=6",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "(22*2)/(164/41)=",
+    "Answers": [
+      {
+        "AnswerText": "11",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "9",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "7",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "-40*(-7х+5)=-1600",
+    "Answers": [
+      {
+        "AnswerText": "х=-5",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "х=5",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "х=1",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "(-20х-50)*2=100",
+    "Answers": [
+      {
+        "AnswerText": "х=-5",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "х=5",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "х=1",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "2,1*(4-6х)=-42",
+    "Answers": [
+      {
+        "AnswerText": "х=4",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "х=6",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "х=-6",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "3*(2-15х)=-6",
+    "Answers": [
+      {
+        "AnswerText": "х=0",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "х=1",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "х=-3",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "13-5*х=8-2*х",
+    "Answers": [
+      {
+        "AnswerText": "х=1",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "х=0",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "х=2",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "8,034-7,34+0,092=",
+    "Answers": [
+      {
+        "AnswerText": "1,614",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "0,968",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "1,5",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "3000-700-639+18=",
+    "Answers": [
+      {
+        "AnswerText": "1679",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "1529",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "1939",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "(14*19-83*7+26)/17=",
+    "Answers": [
+      {
+        "AnswerText": "-17",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "-15",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "-9",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "68+39+52-27+99=",
+    "Answers": [
+      {
+        "AnswerText": "231",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "251",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "191",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "(425-43,17)*2=",
+    "Answers": [
+      {
+        "AnswerText": "763,66",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "752,93",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "817,96",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "63,9/0,3+20,5*8=",
+    "Answers": [
+      {
+        "AnswerText": "377",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "352,6",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "398",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "(7,6-5,3+8,1)*9-14=",
+    "Answers": [
+      {
+        "AnswerText": "79,6",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "68,3",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "85",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "5,9*3+3,3=",
+    "Answers": [
+      {
+        "AnswerText": "21",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "20",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "19",
+        "IsCorrect": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,512 @@
+[
+  {
+    "QuestionText": "Столица США",
+    "Answers": [
+      {
+        "AnswerText": "Вашингтон",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Нью-Йорк",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Вегас",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Столица Испании",
+    "Answers": [
+      {
+        "AnswerText": "Мадрид",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Рим",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Барселона",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Столица ЮАР",
+    "Answers": [
+      {
+        "AnswerText": "Претория",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Лима",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Монтевидео",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Столица Нигерии",
+    "Answers": [
+      {
+        "AnswerText": "Абуджа",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Найроби",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Кейптаун",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Столица Канады",
+    "Answers": [
+      {
+        "AnswerText": "Оттава",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Берн",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Амстердам",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Столица Южной Кореи",
+    "Answers": [
+      {
+        "AnswerText": "Сеул",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Пхеньян",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Бангкок",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Столица Японии",
+    "Answers": [
+      {
+        "AnswerText": "Токио",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Пекин",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Сингапур",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Столица Бразилии",
+    "Answers": [
+      {
+        "AnswerText": "Бразилиа",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Рио-де-Жанейро",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Лима",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Столица Перу",
+    "Answers": [
+      {
+        "AnswerText": "Лима",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Перу",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Сантьяго",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Столица Норвегии",
+    "Answers": [
+      {
+        "AnswerText": "Осло",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Оттава",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Стокгольм",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Сколько океанов на Земле?",
+    "Answers": [
+      {
+        "AnswerText": "5",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "6",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "7",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Сколько существует материков?",
+    "Answers": [
+      {
+        "AnswerText": "6",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "7",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "5",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Сколько частей света выделяют?",
+    "Answers": [
+      {
+        "AnswerText": "6",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "5",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "4",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Самое глубокое озеро в мире",
+    "Answers": [
+      {
+        "AnswerText": "Байкал",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Озеро Мичиган",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Каспийское море",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Самая длинная река",
+    "Answers": [
+      {
+        "AnswerText": "Амазонка",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Нил",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Миссисипи",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Самая высокая гора в мире",
+    "Answers": [
+      {
+        "AnswerText": "Эверест",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Альпы",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Эльбрус",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Самое глубокое место Тихого океана?",
+    "Answers": [
+      {
+        "AnswerText": "Марианская впадина",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Мариинская впадина",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Гольфстрим",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Самая большая старана в мире",
+    "Answers": [
+      {
+        "AnswerText": "Россия",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "США",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Бразилия",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Страна-лидер по количеству населения",
+    "Answers": [
+      {
+        "AnswerText": "Китай",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Индия",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "США",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Сколько выделяют климатических поясов?",
+    "Answers": [
+      {
+        "AnswerText": "4",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "8",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "6",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "В какой стране находятся Бранденбургские ворота?",
+    "Answers": [
+      {
+        "AnswerText": "Германия",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Польша",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Литва",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "В какой стране находится Алькасар?",
+    "Answers": [
+      {
+        "AnswerText": "Испания",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Италия",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Португалия",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "В какой стране находится Биг-Бен?",
+    "Answers": [
+      {
+        "AnswerText": "Англия",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "США",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Канада",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "В какой стране находится Собор Святого Петра?",
+    "Answers": [
+      {
+        "AnswerText": "Ватикан",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Испания",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Италия",
+        "IsCorrect": false
+      }
+    ]
+  },
+  {
+    "QuestionText": "Самая маленькая страна в мире",
+    "Answers": [
+      {
+        "AnswerText": "Ватикан",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Сингапур",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Нигерия",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "В каком штате США находится статуя Свободы?",
+    "Answers": [
+      {
+        "AnswerText": "Нью-Йорк",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Иллинойс",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Луизиана",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "Глубина Марианской впадины",
+    "Answers": [
+      {
+        "AnswerText": "11 км",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "13 км",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "15 км",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "В какой стране находится гора Эверест?",
+    "Answers": [
+      {
+        "AnswerText": "Китай",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Северная Корея",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Кения",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "В какой стране находится Большой каньон?",
+    "Answers": [
+      {
+        "AnswerText": "США",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Канада",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "Мексика",
+        "IsCorrect": false
+      }
+    ]
+  },
+   {
+    "QuestionText": "На каком материке находится озеро Виктория?",
+    "Answers": [
+      {
+        "AnswerText": "В Африке",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "В Северной Америке",
+        "IsCorrect": false
+      },
+      {
+        "AnswerText": "В Южной Америке",
+        "IsCorrect": false
+      }
+    ]
+  }
+]

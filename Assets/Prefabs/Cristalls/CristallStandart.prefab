@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2237695845557045914}
   - component: {fileID: 8983910589916799575}
+  - component: {fileID: 969871747880327108}
   m_Layer: 0
   m_Name: CristallStandart
   m_TagString: Untagged
@@ -45,7 +46,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cristallRotator: {fileID: 1535334154033170478}
-  _cristallSwipeHandler: {fileID: 3069766508487299677}
+--- !u!135 &969871747880327108
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73332207378342006}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.65
+  m_Center: {x: 0, y: -0, z: 0}
 --- !u!1 &2059821769704531211
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,19 +173,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5a0d26fd880e69343af9b4a42d64a314, type: 3}
   m_PrefabInstance: {fileID: 8654615606719720016}
   m_PrefabAsset: {fileID: 0}
---- !u!135 &6133374081809994534
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8420102770469213953}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.009129202
-  m_Center: {x: 0, y: -0, z: 0}
 --- !u!114 &1535334154033170478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,15 +188,3 @@ MonoBehaviour:
   _startRotateSpeed: 100
   _returnRotateSpeed: 400
   _rotateAccelerationMultiplier: 15
---- !u!114 &3069766508487299677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8420102770469213953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4676573fda19e444aaa4ce2c87c1a2ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
