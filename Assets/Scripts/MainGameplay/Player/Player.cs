@@ -6,7 +6,7 @@ public class Player : Character
     private PauseHandler _pauseHandler;
 
     [Inject]
-    public void Initialize(PlayerStatsConfig playerStatsConfig, IEnemyTargetSetter enemyTargetSetter, PauseHandler pauseHandler)
+    private void Construct(PlayerStatsConfig playerStatsConfig, IEnemyTargetSetter enemyTargetSetter, PauseHandler pauseHandler)
     {
         Initialize(playerStatsConfig.MaxHealth, playerStatsConfig.AttackDamage);
         _enemyTargetSetter = enemyTargetSetter;

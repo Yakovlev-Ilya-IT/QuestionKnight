@@ -11,13 +11,13 @@ public class QuizItemHolder : MonoBehaviour
     public List<Answer> Answers => _answers;
 
     [Inject]
-    public void Init()
+    private void Construct()
     {
-        _question.Init();
+        _question.Initialize();
 
         foreach (Answer answer in _answers)
         {
-            answer.Init();
+            answer.Initialize();
         }
     }
 }

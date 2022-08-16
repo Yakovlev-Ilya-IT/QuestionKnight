@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
     private ISceneLoadMediator _mediator;
 
     [Inject]
-    private void Initialize(ISceneLoadMediator mediator)
+    private void Construct(ISceneLoadMediator mediator)
     {
         _mediator = mediator;
     }

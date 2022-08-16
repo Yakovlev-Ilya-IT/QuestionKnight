@@ -7,7 +7,7 @@ public class SceneLoadMediator : MonoBehaviour, ISceneLoadMediator
     private ISimpleSceneLoader _simpleSceneLoader;
 
     [Inject]
-    private void Initialize(ILevelLoader levelLoader, ISimpleSceneLoader simpleSceneLoader)
+    private void Construct(ILevelLoader levelLoader, ISimpleSceneLoader simpleSceneLoader)
     {
         _levelLoader = levelLoader;
         _simpleSceneLoader = simpleSceneLoader;

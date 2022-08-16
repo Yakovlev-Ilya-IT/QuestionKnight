@@ -8,7 +8,7 @@ public class AdventureSelectionDisplay : Window
     private ILevelSelectionMediator _mediator;
 
     [Inject]
-    public void Construct(ILevelSelectionMediator levelSelectionMediator)
+    private void Construct(ILevelSelectionMediator levelSelectionMediator)
     {
         _mediator = levelSelectionMediator;
     }

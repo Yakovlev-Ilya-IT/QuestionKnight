@@ -6,14 +6,20 @@ public static class SideDetector
 
     public static AnswerLocationSide GetLocation(Vector3 point)
     {
-        if (point.y > -point.x * tanPiDividedSix && point.x > 0)
+        if (CheckRightSide(point))
             return AnswerLocationSide.Right;
-        if (point.y > point.x * tanPiDividedSix && point.x < 0)
+        if (CheckLeftSide(point))
             return AnswerLocationSide.Left;
-        if (point.y < point.x * tanPiDividedSix && point.y < -point.x * tanPiDividedSix)
+        if (CheckBottomSide(point))
             return AnswerLocationSide.Bottom;
 
         Debug.LogError($"Error point is {point}");
         return AnswerLocationSide.Left;
     }
+
+    private static bool CheckLeftSide(Vector3 point) => point.y > point.x * tanPiDividedSix && point.x < 0;
+
+    private static bool CheckRightSide(Vector3 point) => point.y > -point.x * tanPiDividedSix && point.x > 0;
+
+    private static bool CheckBottomSide(Vector3 point) => point.y < point.x * tanPiDividedSix && point.y < -point.x * tanPiDividedSix;
 }

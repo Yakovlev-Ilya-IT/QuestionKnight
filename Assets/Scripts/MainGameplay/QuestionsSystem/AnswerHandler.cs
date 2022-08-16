@@ -8,17 +8,24 @@ public class AnswerHandler: IAnswerHandler
     public event Action GaveCorrectAnswer;
     public event Action GaveIncorrectAnswer;
 
+    private CristallSwipeHandler _cristallSwipeHandler;
+
+    public AnswerHandler(CristallSwipeHandler cristallSwipeHandler)
+    {
+        _cristallSwipeHandler = cristallSwipeHandler;
+    }
+
     public void SetCurrentQuestion(QuestionItem question)
     {
         _currentQusetion = question;
-        QuizEventHandler.CristallSwipeEnded += ApplyAnswerDirection;
+        _cristallSwipeHandler.CristallSwipeEnded += ApplyAnswerDirection;
     }
 
     public void ApplyAnswerDirection(Vector3 direction)
     {
         AnswerLocationSide answerLocation = SideDetector.GetLocation(direction);
 
-        if (_currentQusetion != null)//сделать проверку на налл текущего ответа (его может и не быть)
+        if (_currentQusetion != null) 
         {
             Answer answer = _currentQusetion.GetAnswer(answerLocation);
 
@@ -27,7 +34,7 @@ public class AnswerHandler: IAnswerHandler
             else
                 GaveIncorrectAnswer?.Invoke();
 
-            QuizEventHandler.CristallSwipeEnded -= ApplyAnswerDirection;
+            _cristallSwipeHandler.CristallSwipeEnded -= ApplyAnswerDirection;
         }
         else
         {
@@ -37,6 +44,6 @@ public class AnswerHandler: IAnswerHandler
 
     ~AnswerHandler()
     {
-        QuizEventHandler.CristallSwipeEnded -= ApplyAnswerDirection;
+        _cristallSwipeHandler.CristallSwipeEnded -= ApplyAnswerDirection;
     }
 }

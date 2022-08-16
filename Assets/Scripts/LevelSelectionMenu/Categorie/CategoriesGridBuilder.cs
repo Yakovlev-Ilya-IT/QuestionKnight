@@ -24,7 +24,7 @@ public class CategoriesGridBuilder : MonoBehaviour
     private ILevelSelectionMediator _mediator;
 
     [Inject]
-    public void Construct(ILevelSelectionMediator mediator)
+    private void Construct(ILevelSelectionMediator mediator)
     {
         _mediator = mediator;
     }

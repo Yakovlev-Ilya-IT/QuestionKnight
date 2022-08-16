@@ -7,6 +7,7 @@ public class ServiceInstaller : MonoInstaller
     [SerializeField] private GameplayMediator _gameplaMediator;
     [SerializeField] private SceneLoadMediator _sceneLoadMediator;
     [SerializeField] private SceneFader _sceneFader;
+    [SerializeField] private CristallSwipeHandler _cristallSwipeHandler;
     public override void InstallBindings()
     {
         BindSceneLoader();
@@ -14,6 +15,12 @@ public class ServiceInstaller : MonoInstaller
         BindDataProviders();
         BindMediator();
         BindSaver();
+        BindCristallSwipeHandler();
+    }
+
+    private void BindCristallSwipeHandler()
+    {
+        Container.BindInterfacesAndSelfTo<CristallSwipeHandler>().FromInstance(_cristallSwipeHandler).AsSingle();
     }
 
     private void BindPauseHandler()

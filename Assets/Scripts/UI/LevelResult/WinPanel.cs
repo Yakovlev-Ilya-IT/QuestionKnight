@@ -8,9 +8,9 @@ public class WinPanel : LevelResultWindow
     [SerializeField] private WinPanelView _view;
 
     [Inject]
-    protected new void Initialize(IGameplayMediator mediator)
+    private void Construct(IGameplayMediator mediator)
     {
-        base.Initialize(mediator);
+        Initialize(mediator);
         _view.Initialize();
     }
 

@@ -1,19 +1,27 @@
 using UnityEngine;
 using Zenject;
 
-public class Cristall : MonoBehaviour
+public class Cristall : MonoBehaviour, IPause
 {
     [SerializeField] private CristallRotator _cristallRotator;
+    [SerializeField] private CristallView _view;
+
+    private PauseHandler _pauseHandler;
+    private CristallSwipeHandler _cristallSwipeHandler;
 
     private void OnEnable()
     {
-        QuizEventHandler.CristallSwipeEnded += OnSwipeEnded;
+        _cristallSwipeHandler.CristallSwipeEnded += OnSwipeEnded;
     }
 
     [Inject]
-    public void Init()
+    private void Construct(PauseHandler pauseHandler, CristallSwipeHandler cristallSwipeHandler)
     {
+        _pauseHandler = pauseHandler;
+        _cristallSwipeHandler = cristallSwipeHandler;
+        _pauseHandler.Add(this);
         _cristallRotator.Initialize(new Vector3(Random.value, Random.value, Random.value));
+        _view.Initialize();
     }
 
     private void OnSwipeEnded(Vector3 direction)
@@ -24,7 +32,12 @@ public class Cristall : MonoBehaviour
 
     private void OnDisable()
     {
-        QuizEventHandler.CristallSwipeEnded -= OnSwipeEnded;
+        _cristallSwipeHandler.CristallSwipeEnded -= OnSwipeEnded;
     }
 
+    public void SetPause(bool isPaused)
+    {
+        _cristallRotator.SetStop(isPaused);
+        _view.SetPause(isPaused);
+    }
 }

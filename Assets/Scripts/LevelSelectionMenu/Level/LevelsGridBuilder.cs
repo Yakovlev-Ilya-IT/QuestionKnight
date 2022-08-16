@@ -15,7 +15,7 @@ public class LevelsGridBuilder : MonoBehaviour
     private ILevelSelectionMediator _mediator;
 
     [Inject]
-    private void Initialize(LevelsDataProvider levelsDataProvider, ISaver saver, ILevelSelectionMediator mediator)
+    private void Construct(LevelsDataProvider levelsDataProvider, ISaver saver, ILevelSelectionMediator mediator)
     {
         _levelsDataProvider = levelsDataProvider;
         _saver = saver;

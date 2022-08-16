@@ -13,7 +13,7 @@ public class GameplayMediator : MonoBehaviour, IGameplayMediator
     private ConfigsHolder _configsHolder;
 
     [Inject]
-    private void Initialize(PauseHandler pauseHandler, LevelsDataProvider levelsDataProvider, ISceneLoadMediator sceneLoadMediator, ConfigsHolder configsHolder)
+    private void Construct(PauseHandler pauseHandler, LevelsDataProvider levelsDataProvider, ISceneLoadMediator sceneLoadMediator, ConfigsHolder configsHolder)
     {
         _pauseHandler = pauseHandler;
         _levelsDataProvider = levelsDataProvider;

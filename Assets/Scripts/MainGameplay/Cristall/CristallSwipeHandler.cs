@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using Zenject;
@@ -15,11 +16,18 @@ public class CristallSwipeHandler : MonoBehaviour, IPause
 
     private IInput _input;
 
+    public event Action<Vector3> ClickedCristall;
+    public event Action<Vector3, bool> Drag;
+    public event Action<Vector3> CristallSwipeEnded;
+
+    private Camera _camera;
+
     [Inject]
     private void Construct(PauseHandler pauseHandler, IInput input)
     {
         _pauseHandler = pauseHandler;
         _pauseHandler.Add(this);
+        _camera = Camera.main;
         _input = input;
     }
 
@@ -35,13 +43,14 @@ public class CristallSwipeHandler : MonoBehaviour, IPause
         if (CheckClickDownPossibility())
             return;
 
-        Ray ray = Camera.main.ScreenPointToRay(inputPosition);
+        Ray ray = _camera.ScreenPointToRay(inputPosition);
 
         if(Physics.Raycast(ray, out RaycastHit hit))
         {
             if(hit.transform.TryGetComponent(out Cristall cristall))
             {
                 _startTapPosition = inputPosition;
+                ClickedCristall?.Invoke(inputPosition);
                 _isSwiping = true;
             }
         }
@@ -49,10 +58,10 @@ public class CristallSwipeHandler : MonoBehaviour, IPause
 
     private void OnDrag(Vector3 inputPosition)
     {
-        if (_isSwiping)
-        {
-            Debug.DrawRay(transform.position, new Vector3(inputPosition.x - _startTapPosition.x, inputPosition.y - _startTapPosition.y, 0));
-        }
+        if (_isSwiping && CheckLeftDeadZone(inputPosition))
+            Drag?.Invoke(inputPosition, true);
+        else
+            Drag?.Invoke(Vector3.zero, false);
     }
 
     private void OnClickUp(Vector3 inputPosition)
@@ -62,11 +71,16 @@ public class CristallSwipeHandler : MonoBehaviour, IPause
 
         _isSwiping = false;
 
-        if (((Vector2)(inputPosition - _startTapPosition)).magnitude > DeadZone)
+        if (CheckLeftDeadZone(inputPosition))
         {
             _swipeDirection = new Vector3(inputPosition.x - _startTapPosition.x, inputPosition.y - _startTapPosition.y, 0);
-            QuizEventHandler.SendCristallSwipeEnded(_swipeDirection.normalized);
+            CristallSwipeEnded?.Invoke(_swipeDirection.normalized);
         }
+    }
+
+    private bool CheckLeftDeadZone(Vector3 inputPosition)
+    {
+        return ((Vector2)(inputPosition - _startTapPosition)).magnitude > DeadZone;
     }
 
     private bool CheckClickDownPossibility()
@@ -76,7 +90,7 @@ public class CristallSwipeHandler : MonoBehaviour, IPause
 
     private bool CheckClickUpPossibility()
     {
-        return EventSystem.current.IsPointerOverGameObject() || _isPaused || !_isSwiping;
+        return _isPaused || !_isSwiping;
     }
 
     public void SetPause(bool isPaused)

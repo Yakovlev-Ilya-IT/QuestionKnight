@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -10,7 +9,7 @@ public class Hud : MonoBehaviour
     private IGameplayMediator _mediator;
 
     [Inject]
-    private void Contruct(IGameplayMediator mediator)
+    private void Construct(IGameplayMediator mediator)
     {
         _mediator = mediator;
     }

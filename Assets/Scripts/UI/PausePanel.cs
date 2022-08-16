@@ -14,7 +14,7 @@ public class PausePanel : Window
     private IGameplayMediator _mediator;
 
     [Inject]
-    protected void Initialize(IGameplayMediator mediator)
+    private void Construct(IGameplayMediator mediator)
     {
         _mediator = mediator;
     }

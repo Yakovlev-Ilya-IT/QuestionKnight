@@ -11,7 +11,7 @@ public class EnemySpawner : MonoBehaviour
     private DiContainer _diContainer;
 
     [Inject]
-    public void Init(DiContainer diContainer)
+    private void Construct(DiContainer diContainer)
     {
         _diContainer = diContainer;
     }

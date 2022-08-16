@@ -1,16 +1,19 @@
 using UnityEngine;
-using Zenject;
 
+[RequireComponent(typeof(QuestionView))]
 public class Question: QuizText
 {
-    public new void Init()
+    private QuestionView _view;
+
+    public void Initialize()
     {
-        base.Init();
+        _view = GetComponent<QuestionView>();
+        _view.Init();
     }
 
-    public new void UpdateInformation(string text)
+    public override void UpdateInformation(string text)
     {
-        //проверь параметры
         base.UpdateInformation(text);
+        _view.SetText(_text);
     }
 }

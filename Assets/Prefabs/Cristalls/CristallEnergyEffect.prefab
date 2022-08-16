@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1238844534485289232}
   - component: {fileID: 1238844534485289233}
   m_Layer: 0
-  m_Name: InputEffect
+  m_Name: CristallEnergyEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -746,7 +746,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1.15
+      value: 0.94
       mode: 0
       spread: 0
       speed:
@@ -2406,7 +2406,6 @@ ParticleSystem:
       m_Bits: 4294967295
     influenceList:
     - {fileID: 0}
-    - {fileID: 0}
   ClampVelocityModule:
     enabled: 0
     x:
@@ -2680,11 +2679,11 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
   NoiseModule:
-    enabled: 0
+    enabled: 1
     strength:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4002,7 +4001,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 1, b: 1, a: 0.6039216}
+        key0: {r: 1, g: 1, b: 1, a: 0.9843137}
         key1: {r: 1, g: 1, b: 1, a: 0}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
@@ -4010,7 +4009,7 @@ ParticleSystem:
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
-        ctime0: 0
+        ctime0: 22359
         ctime1: 65535
         ctime2: 0
         ctime3: 0
@@ -4018,7 +4017,7 @@ ParticleSystem:
         ctime5: 0
         ctime6: 0
         ctime7: 0
-        atime0: 0
+        atime0: 23130
         atime1: 65535
         atime2: 0
         atime3: 0
@@ -4134,7 +4133,7 @@ ParticleSystem:
         ctime5: 0
         ctime6: 0
         ctime7: 0
-        atime0: 10409
+        atime0: 45489
         atime1: 65535
         atime2: 0
         atime3: 0
@@ -4761,7 +4760,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 2e195ac1c7b5d904a93144e01d009a38, type: 2}
-  - {fileID: 2100000, guid: eb4cf834fa0b3934f940f99877cd7e8e, type: 2}
+  - {fileID: 2100000, guid: 5ceeb85ba684d3f49a153ea6b0950ce4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

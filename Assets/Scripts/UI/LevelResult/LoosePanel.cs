@@ -8,9 +8,9 @@ public class LoosePanel : LevelResultWindow
     [SerializeField] LoosePanelView _view;
 
     [Inject]
-    protected new void Initialize(IGameplayMediator mediator)
+    private void Construct(IGameplayMediator mediator)
     {
-        base.Initialize(mediator);
+        Initialize(mediator);
         _view.Initialize();
     }
 
