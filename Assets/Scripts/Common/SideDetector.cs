@@ -17,9 +17,9 @@ public static class SideDetector
         return AnswerLocationSide.Left;
     }
 
-    private static bool CheckLeftSide(Vector3 point) => point.y > point.x * tanPiDividedSix && point.x < 0;
+    private static bool CheckLeftSide(Vector3 point) => point.y >= point.x * tanPiDividedSix && point.x <= 0;
 
-    private static bool CheckRightSide(Vector3 point) => point.y > -point.x * tanPiDividedSix && point.x > 0;
+    private static bool CheckRightSide(Vector3 point) => point.y >= -point.x * tanPiDividedSix && point.x >= 0;
 
-    private static bool CheckBottomSide(Vector3 point) => point.y < point.x * tanPiDividedSix && point.y < -point.x * tanPiDividedSix;
+    private static bool CheckBottomSide(Vector3 point) => point.y <= point.x * tanPiDividedSix && point.y <= -point.x * tanPiDividedSix;
 }
